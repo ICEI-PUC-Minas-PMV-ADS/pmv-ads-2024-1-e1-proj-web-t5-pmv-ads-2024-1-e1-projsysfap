@@ -39,7 +39,7 @@ a seu estoque de produtos.
 
 # Hospedagem
 
-* A aplicação em HTML/CSS/JS é um projeto que pode ser utilizado tanto em servidores como em navegadores web.
+* A aplicação em HTML/CSS/JS é um projeto que pode ser utilizado em navegadores web.
 
 # Código-Fonte
 
