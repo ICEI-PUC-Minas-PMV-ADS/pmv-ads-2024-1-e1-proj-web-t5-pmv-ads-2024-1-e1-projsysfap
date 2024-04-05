@@ -1,6 +1,6 @@
 # Introdução
 
-Os avanços da tecnologia trazem benefícios em todas as áreas da vida.Conforme o tempo passa, a informatização das coisas tem apresentado soluções eficazes e ágeis que visam economizar tempo, reduzir falhas, retrabalhos e facilitar a rotina de empresas e de seus colaboradores. 
+Os avanços da tecnologia trazem benefícios em todas as áreas da vida. Conforme o tempo passa, a informatização das coisas tem apresentado soluções eficazes e ágeis que visam economizar tempo, reduzir falhas, retrabalhos e facilitar a rotina de empresas e de seus colaboradores. 
 A gestão ineficiente do estoque de uma empresa causa problemas para clientes e funcionários. Dentre eles estão: repasse de informações incorretas, prazos não atendidos, inconsistência no levantamento dos produtos, insatisfação dos clientes, entre outros.
 No mercado de autopeças automotivas é imprescindível a agilidade e organização. A ausência desses requisitos pode afastar a empresa da lucratividade e do reconhecimento. Pois esses serviços têm alta demanda no mercado automotivo.
 
