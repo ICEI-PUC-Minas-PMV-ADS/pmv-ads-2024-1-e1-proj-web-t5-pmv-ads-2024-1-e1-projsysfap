@@ -2,33 +2,58 @@
 
 ## Perfis de Usuários
 
-[Enumere e faça o detalhamento dos perfis de usuários. Utilize o modelo de tabela abaixo para sintetizá-los.]
 
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil Nome </th>
+<th colspan="2">Perfil 1: Vendedor </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">...</td>
+<td width="600px">Vendedores de lojas de peças automotivas</td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>...</td>
+<td>1. Acesso fácil e rápido à contabilidade do estoque; 2.	Verificar a situação das peças no estoque; 3. Realizar registro de vendas.</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2">Perfil 2: Gerente </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Gerentes de lojas de peças automotivas</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>1. Ter uma visão geral da movimentação do estoque; 2. Solicitar a reposição de itens no estoque; 3. Melhorar a eficiência da gestão de estoque; 4. Reduzir o tempo gasto em tarefas administrativas.</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2">Perfil 3: Cliente </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Clientes de lojas de peças automotivas</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>1. Receber um bom atendimento; 2. Ver disponibilidade de peças; 3. Reduzir tempo de espera; 4. Visualizar informações do estoque; 5.	Fazer compras.</td>
 </tr>
 </tbody>
 </table>
 
 
+
 ## Histórias de Usuários
-
-[Apresente aqui as histórias de usuários que são relevantes para o projeto da solução.]
-
-> **Link Útil**:
-> - [Como escrever boas histórias de usuário](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-
-[Utilize o modelo de tabela abaixo para apresentar as histórias de usuários.]
 
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
