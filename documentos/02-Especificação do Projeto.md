@@ -51,38 +51,54 @@
 </tbody>
 </table>
 
-
-
 ## Histórias de Usuários
 
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
-| ...                | ...                       | ...                              |
-| ...                | ...                       | ...                              |
+|Gerente             |Um inventário de estoque preciso|Organizar melhor meu estoque|
+|Gerente             |Uma visão geral da movimentação do  estoque | Controlar o fluxo e reposição de mercadorias |
+|Gerente             |Gerar relatórios de vendas e estoque|Analisar o desempenho da loja e planejar estratégias futuras|
+|Gerente             |Monitorar as atividades do sistema|Identificar e resolver problemas rapidamente|
+|Vendedor            |Informações precisas sobre uma peça|Auxiliar no atendimento ao cliente|
+|Vendedor            |Saber a quantidade de cada peça em estoque|Visualizar a disponibilidade de determinadas peças antes de finalizar uma venda|
+|Vendedor            |Responder dúvidas dos clientes|Satisfação do cliente|
+|Cliente             |Saber o preço de uma peça|Fazer orçamento|
+|Cliente             |Visualizar informações dos produtos|Decidir quais itens comprar|
+|Cliente             |Solicitar suporte ao vendedor|Obter ajuda quando tiver problemas ou dúvidas|
+
 
 ## Requisitos do Projeto
 
-[Com base nas Histórias de Usuários, enumere os requisitos da solução. Lembre-se que cada requisito deve corresponder a uma, e somente uma, característica alvo da solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.]
-
 ### Requisitos Funcionais
-
-[Utilize o modelo de tabela abaixo para apresentar os requisitos funcionais]
 
 |ID    | Descrição                | Prioridade |
 |-------|---------------------------------|----|
-| RF-01 |  ...                    | ...   | 
-|  ...  |  ...                    | ...   |
+| RF-01 |Listar as peças com filtros de classificação como ordem alfabética, por data de entrada, por quantidade de peças no estoque, entre outros                    | Alta   | 
+| RF-02 |Buscar peças com critérios como nome, código, status (disponível, não disponível), data de entrada | Alta |
+| RF-03 |Gerar relatórios das últimas movimentações, por período|Alta|
+ | RF-04 |Realizar as tarefas de CRUD - criar novas peças, recuperar as peças, editar e deletar|Alta|
+| RF-05 |Permitir que o gerente adicione, remova e atualize usuários|Alta|
+| RF-06 |Permitir que o cliente solicite suporte ao vendedor para resolver problemas ou dúvidas|Média|
+| RF-07 |Fornecer ao usuário as informações dos produtos(preço, características, quantidade, descrição do produto)|Alta|
+| RF-08 |Ser capaz de realizar a contagem de mercadorias em estoque|Alta|
+| RF-09 |O sistema deve ter uma função para visualização do fluxo de mercadorias|Baixa|
+
 
 **Prioridade: Alta / Média / Baixa. 
 
 ### Requisitos não Funcionais
 
-[Utilize o modelo de tabela abaixo para apresentar os requisitos não-funcionais]
-
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
-| RNF-01 |  ...                    | ...   | 
-| ...    |  ...                    | ...   | 
+| RNF-01 | Ser compatível com outros sistemas| Média   | 
+| RNF-02 | Apresentar Web Design Responsivo | Alta   | 
+| RNF-03 | Ser capaz de lidar com um aumento no número de usuários sem degradação significativa do desempenho|Média|
+| RNF-04 |Ser acessível para pessoas com deficiência, seguindo as diretrizes de acessibilidade|Média|
+| RNF-05 |Ser fácil de modificar e atualizar para atender às necessidades em constantes mudanças dos usuários e do mercado|Alta|
+| RNF-06 |Implementar medidas de segurança robustas para proteger contra ataques cibernéticos e vazamentos de dados|Alta|
+| RNF-07 |Ser fácil de usar, com uma interface intuitiva e amigável para todos os tipos de usuários|Alta|
+| RNF-08 |Fazer uso eficiente dos recursos, como memória e processamento, para garantir um desempenho otimizado|Alta|
+| RNF-09 |Ser produzido em javascript, html e css|Alta|
 
 **Prioridade: Alta / Média / Baixa. 
 
