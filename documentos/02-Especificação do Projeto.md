@@ -72,7 +72,7 @@
 ### Requisitos Funcionais
 
 |ID    | Descrição                | Prioridade |
-|:-------:|---------------------------------|----|
+|-------|---------------------------------|----|
 | RF-01 |Listar as peças com filtros de classificação como ordem alfabética, por data de entrada, por quantidade de peças no estoque, entre outros                    | Alta   | 
 | RF-02 |Buscar peças com critérios como nome, código, status (disponível, não disponível), data de entrada | Alta |
 | RF-03 |Gerar relatórios das últimas movimentações, por período|Alta|
