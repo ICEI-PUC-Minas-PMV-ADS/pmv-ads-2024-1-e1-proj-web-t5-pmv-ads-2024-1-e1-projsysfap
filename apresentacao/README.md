@@ -2,7 +2,7 @@
 
 ## Conjunto de Slides
 
-[Slide d apresentação](/documentos/slide_apresentacao.pdf)
+[Slide de apresentação](/documentos/slide_apresentacao.pdf)
 
 ## Vídeo de apresentação
 
