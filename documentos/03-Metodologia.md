@@ -26,7 +26,7 @@ Para gerir e coordenar as atividades do projeto, a esquipe está utilizando o Gi
 - In progress: Quando uma tarefa tiver sido iniciada, ela é movida para cá.
 - Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 
-O quadro kanban do grupo no GitHub Project está disponível no link https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/983 e no cenário atual, a imagem a seguir ilustra o que foi mencionando:
+O quadro kanban do grupo no GitHub Project está disponível no link [Quadro Kanban](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/983) e no cenário atual, a imagem a seguir ilustra o que foi mencionando:
 
 <figure> 
   <img src="/documentos/img/kanban_board.png">
@@ -47,7 +47,7 @@ O quadro kanban do grupo no GitHub Project está disponível no link https://git
 </ul>
 
 <figure> 
-  <img src="https://user-images.githubusercontent.com/100447878/164068979-9eed46e1-9b44-461e-ab88-c2388e6767a1.png"
+  <img src="/documentos/img/tela_esquema_de_cores.png"
     <figcaption>Figura 2 - Tela do esquema de cores e categorias</figcaption>
 </figure> 
   
