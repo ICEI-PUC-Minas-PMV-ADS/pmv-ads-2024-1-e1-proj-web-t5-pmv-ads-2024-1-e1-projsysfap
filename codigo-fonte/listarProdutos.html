@@ -2,19 +2,20 @@
 <!DOCTYPE html>
 <head>
 <meta charset="ISO-8859-1"/>
-<title>Lista de Produtos - Visão do Cliente</title>
+<title>Lista de Produtos - VisÃ£o do Cliente</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <link rel='stylesheet' href='css/style.css'>
 </head>
-<body>
+<body style='text-align:center'>
+<h1 style='text-align: center'>Sistema SYSFAP</h1>
 <h2 style='text-align: center'> TABELA DE PRODUTOS</h2>
 <table id='myTable'>
     <thead>
     <tr>
-        <th>Cód. <img src='img/filter.png' width="32" onClick="showLocalStorage('cod')"/></td>
+        <th>CÃ³d. <img src='img/filter.png' width="32" onClick="showLocalStorage('cod')"/></td>
         <th>Produto <img src='img/filter.png' width="32" onClick="showLocalStorage('n')"/></th>
         <th>Categoria <img src='img/filter.png' width="32" onClick="showLocalStorage('c')"/></th>
-        <th>Valor Unitário <img src='img/filter.png' width="32" onClick="showLocalStorage('p')"/></th>
+        <th>Valor UnitÃ¡rio <img src='img/filter.png' width="32" onClick="showLocalStorage('p')"/></th>
         <th>Em estoque</th>
         <th>Desconto</th>
         <th>Valor Total</th>
@@ -35,11 +36,4 @@
 showLocalStorage("n");
 
 </script>
-<script type="text/javascript">
-    function onStorageEvent() {
-      alert("storage event: " + localStorage.getItem("products"));
-    }
-
-    window.addEventListener('storage', onStorageEvent);
-  </script>
 </html>
