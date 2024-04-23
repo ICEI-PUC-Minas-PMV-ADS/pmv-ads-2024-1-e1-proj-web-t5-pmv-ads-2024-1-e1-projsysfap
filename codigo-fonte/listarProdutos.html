@@ -1,0 +1,45 @@
+<!-- The `multiple` attribute lets users select multiple files. -->
+<!DOCTYPE html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Lista de Produtos - Visão do Cliente</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+<h2 style='text-align: center'> TABELA DE PRODUTOS</h2>
+<table id='myTable'>
+    <thead>
+    <tr>
+        <th>Cód. <img src='img/filter.png' width="32" onClick="showLocalStorage('cod')"/></td>
+        <th>Produto <img src='img/filter.png' width="32" onClick="showLocalStorage('n')"/></th>
+        <th>Categoria <img src='img/filter.png' width="32" onClick="showLocalStorage('c')"/></th>
+        <th>Valor Unitário <img src='img/filter.png' width="32" onClick="showLocalStorage('p')"/></th>
+        <th>Em estoque</th>
+        <th>Desconto</th>
+        <th>Valor Total</th>
+        <th>Status</th>
+    </tr>
+    </head>
+<tbody id='tb'>
+</tbody>
+</table>
+<div id='buttons' style="text-algin: center">
+        <input type='text' id='searchBox' name='searchBox' width="300"/>
+        <input type='button' id='searchButton' onClick="filter('name')" value='Pesquisar Produtos'/>
+</div>
+</body>
+<script src="js/script.js"></script>
+<script type='text/javascript'>
+
+showLocalStorage("n");
+
+</script>
+<script type="text/javascript">
+    function onStorageEvent() {
+      alert("storage event: " + localStorage.getItem("products"));
+    }
+
+    window.addEventListener('storage', onStorageEvent);
+  </script>
+</html>

@@ -1,0 +1,80 @@
+[{
+   "id": "Product001",
+   "name": "Aro Cromado",
+   "category": "rodas",
+   "price": 300.80,
+   "instock": 15
+ },
+   {
+   "id": "Product002",
+   "name": "Roda de liga leve",
+   "category": "rodas",
+   "price": 800.10,
+   "instock": 20
+ },
+ {
+ "id": "Product003",
+  "name": "Vela de Ignicao",
+  "category": "eletrica",
+  "price": 180.50,
+  "instock": 0
+
+  },
+  {
+   "id": "Product004",
+   "name": "Pneu",
+   "category": "pneus",
+   "price": 800.20,
+   "instock": 12
+   },
+   {
+    "id": "Product005",
+    "name": "Carborador",
+    "category": "eletrica",
+    "price": 1200.00,
+    "instock": 8
+    },
+    {
+   "id": "Product006",
+   "name": "Pneu",
+   "category": "pneus",
+   "price": 800.20,
+   "instock": 1
+   },
+   {
+    "id": "Product007",
+    "name": "Carborador",
+    "category": "eletrica",
+    "price": 1200.00,
+    "instock": 0
+    },
+    {
+    "id": "Product008",
+   "name": "Pneu",
+   "category": "pneus",
+   "price": 800.20,
+   "instock": 0
+   },
+   {
+    "id": "Product009",
+    "name": "Carborador",
+    "category": "eletrica",
+    "price": 1200.00,
+    "instock": 2
+    },
+    {
+   "id": "Product010",
+   "name": "Pneu",
+   "category": "pneus",
+   "price": 800.20,
+   "instock": 27
+   },
+   {
+    "id": "Product011",
+    "name": "Carborador",
+    "category": "eletrica",
+    "price": 1200.00,
+    "instock": 15
+    }
+
+]
