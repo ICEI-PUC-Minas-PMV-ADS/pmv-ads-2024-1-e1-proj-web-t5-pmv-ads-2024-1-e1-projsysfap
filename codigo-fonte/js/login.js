@@ -15,7 +15,11 @@ document.getElementById("signinForm").addEventListener("submit", function(e){
             formInputs.removeChild(errorMessage);
         }
         localStorage.setItem("loggedUser",JSON.stringify(registeredUser));
-        window.location.href = "../pages/home.html"
+        if(registeredUser.accessProfile === "vendedor"){
+            window.location.href = "../pages/home-client.html";
+        } else {
+            window.location.href = "../pages/home.html";
+        }
     } else {
         email.classList.add("is-invalid");
         password.classList.add("is-invalid");
