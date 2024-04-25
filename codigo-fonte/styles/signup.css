@@ -1,0 +1,15 @@
+.form-signup{
+    max-width: 443px;
+    height: 762px;
+    padding: 2.75rem 2.125rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-floating .invalid-feedback {
+    font-size: 0.75rem;
+}
+#toggle-password {
+    right: 2%;
+}

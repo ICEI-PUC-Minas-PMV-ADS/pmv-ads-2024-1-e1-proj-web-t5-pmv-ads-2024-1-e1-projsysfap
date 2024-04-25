@@ -1,4 +1,7 @@
-.form-signin{
-    max-width: 330px;
+.form-signin {
+    max-width: 443px;
     padding: 2.75rem 2.125rem;
+}
+#toggle-password {
+    right: 2%;
 }
