@@ -10,7 +10,7 @@
 <body>
     <div class="container-fluid vh-100">
         <div class="row flex-nowrap h-100">
-            <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 280px;">
+            <div class="d-none d-xl-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 280px;">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.9983 8.03641C18.1086 8.26102 18.1815 8.50156 18.2142 8.74884L18.8174 17.7187V17.7187L19.1169 22.2271C19.12 22.6907 19.1927 23.1514 19.3328 23.5942C19.6944 24.4533 20.5645 24.9993 21.5111 24.9613L35.9352 24.0178C36.5598 24.0075 37.163 24.2411 37.612 24.6672C37.9862 25.0223 38.2278 25.4868 38.3039 25.9865L38.3294 26.2898C37.7325 34.5551 31.6622 41.4489 23.4141 43.2284C15.166 45.008 6.70802 41.2488 2.63219 33.9917C1.45716 31.8834 0.723227 29.566 0.473479 27.1756C0.369146 26.4679 0.323206 25.7532 0.336106 25.0383C0.323225 16.177 6.6335 8.51618 15.4667 6.66933C16.5298 6.5038 17.572 7.0666 17.9983 8.03641Z" fill="#97A5EB"/>
@@ -21,56 +21,126 @@
                 <hr>
                 <ul class="nav nav-pills flex-column mb-auto">
                   <li>
-                    <button class="btn" onclick="loadPage('./dashboard.html')">
-                      <img src="../assets/svg/dashboard.svg" alt="Dashboard" >
+                    <button class="btn d-flex align-items-center active" data-bs-toggle="button" onclick="loadPage('./dashboard.html')">
+                      <img class="me-3"src="../assets/svg/dashboard.svg" alt="Dashboard" >
                       Dashboard
                     </button>
                   </li>
                   <li>
-                    <button class="btn" onclick="loadPage('./orders.html')">
-                        <img src="../assets/svg/Bag.svg" alt="Orders" >
+                    <button class="btn d-flex align-items-center" data-bs-toggle="button" onclick="loadPage('./orders.html')">
+                        <img class="me-3"src="../assets/svg/Bag.svg" alt="Orders" >
                       Orders
                     </button>
                   </li>
                   <li>
-                    <button class="btn" onclick="loadPage('./customers.html')">
-                        <img src="../assets/svg/customers.svg" alt="Customers" >
-                      Orders
+                    <button class="btn d-flex align-items-center" data-bs-toggle="button" onclick="loadPage('./customers.html')">
+                        <img class="me-3" src="../assets/svg/customers.svg" alt="Customers" >
+                      Customers
                     </button>
                   </li>
                   <li>
-                    <button class="btn" onclick="loadPage('./myStock.html')">
-                        <img src="../assets/svg/Folder.svg" alt="Stock" >
+                    <button class="btn d-flex align-items-center" data-bs-toggle="button" onclick="loadPage('./myStock.html')">
+                        <img class="me-3"src="../assets/svg/Folder.svg" alt="Stock" >
                       My stock
                     </button>
                   </li>
                   <li>
-                    <button class="btn" onclick="loadPage('./profile.html')">
-                        <img src="../assets/svg/Setting.svg" alt="Settings" >
-                      Settings
+                    <button class="btn d-flex align-items-center" data-bs-toggle="button" onclick="loadPage('./profile.html')">
+                        <img class="me-3"src="../assets/svg/Setting.svg" alt="Profile" >
+                      Profile
                     </button>
                   </li>
                 </ul>
-                <div class="">
-                  <a href="#" class="btn">
-                    <img src="../assets/svg/fi_headphones.svg" alt="Support" >
+                <div class="d-flex flex-column">
+                  <a href="#" class="btn support-btn d-flex align-items-center">
+                    <img class="me-2"src="../assets/svg/fi_headphones.svg" alt="Support" >
                     <strong>Contact Support</strong>
                   </a>
-                  <a href="../pages/login.html" class="btn" onclick="logout()">
-                    <img src="../assets/svg/Logout.svg" alt="Logout">
+                  <a href="../pages/login.html" class="btn logout-btn d-flex align-items-center" onclick="logout()">
+                    <img class="me-2"src="../assets/svg/Logout.svg" alt="Logout">
                     <strong>Logout</strong>
                   </a>
                 </div>
-            </div>
+          </div>
       
-          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-              <h1 class="h2">Dashboard</h1>
-            </div>
-      
-            <h2>Section title</h2>
+          <main class="ms-xl-auto col-xl-10 px-xl-4">
+              <div class="row align-items-center border-bottom">
+                <div class="col col-auto d-xl-none">
+                  <div class="navbar">
+                    <button class="navbar-toggler focus-ring focus-ring-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-2">
+                    <h1 class="h2">Dashboard</h1>
+                  </div>
+                </div>
+                <div class="col col-auto">
+                  <span class="bg-primary-subtle me-4 py-2 px-3 rounded-5" id="userName">User</span>
+                  <img src="../assets/image/profile.png" alt="">
+                </div>
+              </div>
             <div id="content"></div>
           </main>
+          <div class="offcanvas-xl offcanvas-start d-xl-none" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close focus-ring focus-ring-light" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.9983 8.03641C18.1086 8.26102 18.1815 8.50156 18.2142 8.74884L18.8174 17.7187V17.7187L19.1169 22.2271C19.12 22.6907 19.1927 23.1514 19.3328 23.5942C19.6944 24.4533 20.5645 24.9993 21.5111 24.9613L35.9352 24.0178C36.5598 24.0075 37.163 24.2411 37.612 24.6672C37.9862 25.0223 38.2278 25.4868 38.3039 25.9865L38.3294 26.2898C37.7325 34.5551 31.6622 41.4489 23.4141 43.2284C15.166 45.008 6.70802 41.2488 2.63219 33.9917C1.45716 31.8834 0.723227 29.566 0.473479 27.1756C0.369146 26.4679 0.323206 25.7532 0.336106 25.0383C0.323225 16.177 6.6335 8.51618 15.4667 6.66933C16.5298 6.5038 17.572 7.0666 17.9983 8.03641Z" fill="#97A5EB"/>
+                      <path opacity="0.4" d="M23.8865 0.334783C33.7663 0.586132 42.0699 7.69055 43.6682 17.2596L43.6529 17.3302V17.3302L43.6093 17.4329L43.6154 17.7148C43.5927 18.0882 43.4486 18.4475 43.2001 18.7377C42.9413 19.04 42.5877 19.2459 42.1983 19.3258L41.9608 19.3584L25.3191 20.4367C24.7656 20.4912 24.2144 20.3128 23.8028 19.9456C23.4597 19.6396 23.2404 19.2265 23.1785 18.7815L22.0615 2.16398C22.042 2.10779 22.042 2.04687 22.0615 1.99068C22.0767 1.53263 22.2783 1.09966 22.6213 0.788506C22.9642 0.477351 23.4199 0.31394 23.8865 0.334783Z" fill="#FFCC91"/>
+                  </svg>
+                <span class="fs-4">SysFAP</span>
+              </a>
+              <hr>
+              <ul class="nav nav-pills flex-column mb-auto">
+                <li>
+                  <button class="btn d-flex mb-1 align-items-center active" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" onclick="loadPage('./dashboard.html')">
+                    <img class="me-3"src="../assets/svg/dashboard.svg" alt="Dashboard" >
+                    Dashboard
+                  </button>
+                </li>
+                <li>
+                  <button class="btn d-flex mb-1 align-items-center" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" onclick="loadPage('./orders.html')">
+                      <img class="me-3"src="../assets/svg/Bag.svg" alt="Orders" >
+                    Orders
+                  </button>
+                </li>
+                <li>
+                  <button class="btn d-flex mb-1 align-items-center" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" onclick="loadPage('./customers.html')">
+                      <img class="me-3"src="../assets/svg/customers.svg" alt="Customers" >
+                    Customers
+                  </button>
+                </li>
+                <li>
+                  <button class="btn d-flex mb-1 align-items-center" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" onclick="loadPage('./myStock.html')">
+                      <img class="me-3"src="../assets/svg/Folder.svg" alt="Stock" >
+                    My stock
+                  </button>
+                </li>
+                <li>
+                  <button class="btn d-flex mb-1 align-items-center" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" onclick="loadPage('./profile.html')">
+                      <img class="me-3"src="../assets/svg/Setting.svg" alt="Profile" >
+                    Profile
+                  </button>
+                </li>
+              </ul>
+              <div class="d-flex flex-column align-items-start">
+                <a href="#" class="btn support-btn d-flex align-items-center">
+                  <img class="me-2" src="../assets/svg/fi_headphones.svg" alt="Support" >
+                  <strong>Contact Support</strong>
+                </a>
+                <a href="../pages/login.html" class="btn logout-btn d-flex align-items-center" onclick="logout()">
+                  <img class="me-2" src="../assets/svg/Logout.svg" alt="Logout">
+                  <strong>Logout</strong>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div> 
       <script src="../js/home.js"></script>
