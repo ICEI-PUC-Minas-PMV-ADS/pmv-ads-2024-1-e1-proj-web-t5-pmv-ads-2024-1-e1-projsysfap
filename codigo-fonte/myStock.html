@@ -1,0 +1,42 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type='text/javascript'>showLocalStorage("n");</script>
+<div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./home.html">
+            <img src="../assets/Home.svg" alt="Home">
+          </a></li>
+          <li class="breadcrumb-item active" aria-current="page">My Stock</li>
+        </ol>
+    </nav>
+    <h1>Tabela de Produtos</h1>
+    <div id='buttons' style="text-algin: center; padding-bottom: 15px">
+        <input type='text' id='searchBox' name='searchBox' width="300"/>
+        <input type='button' class='btn btn-primary' id='searchButton' onClick="filter('name')" value='Pesquisar Produtos'/>
+        <input type='button' class='btn btn-secondary' id='cadastrarProduto' onClick="loadPage('./cadastrarProduto.html')" value='Cadastrar Produto'/>
+        <input type='button' class='btn btn-danger' id='cargaInicial' name='cargaInicial' onClick="loadPage('./cargaInicial.html')" value='Carga Inicial'/>
+        <input type='button' class='btn btn-warning' id='exportarProdutos' name='exportarProdutos' onClick="writeToTextFile()" value='Exportar Produtos'/>
+    </div>
+<table id='myTable' class='table table-striped table-success'>
+    <thead>
+    <tr>
+        <th scope="col">Cod. <img src='../img/filter.png' width="32" onClick="showLocalStorage('cod')"/></td>
+        <th scope="col">Produto <img src='../img/filter.png' width="32" onClick="showLocalStorage('n')"/></th>
+        <th scope="col">Categoria <img src='../img/filter.png' width="32" onClick="showLocalStorage('c')"/></th>
+        <th scope="col">Valor Unitario <img src='../img/filter.png' width="32" onClick="showLocalStorage('p')"/></th>
+        <th scope="col">Em estoque</th>
+        <th scope="col">Desconto</th>
+        <th scope="col">Valor Total</th>
+        <th scope="col">Status</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Deletar</th>
+    </tr>
+    </head>
+    <tbody id='tb'>
+    </tbody>
+</table>
+
+</body>
+<script src="../js/myStock.js"></script>
+<script src="../js/init.js"></script>
+</div>
