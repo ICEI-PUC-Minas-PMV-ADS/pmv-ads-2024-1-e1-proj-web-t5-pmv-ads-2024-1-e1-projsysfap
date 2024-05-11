@@ -68,6 +68,14 @@ function updateOrderTable() {
     document.querySelector('#orderTable tbody').innerHTML = orderTable;
     document.querySelector("#totalOrders tbody td").innerHTML = formatAsReal(totalOrders);
 }
+function generateOrderToken() {
+    let array = new Uint8Array(6);
+    window.crypto.getRandomValues(array);
+    let randomToken = Array.from(array, byte => byte.toString(16).padStart(2, "0")).join("");
+    return `ORDER-${randomToken}`;
+}
+
+let orderToken = generateOrderToken();
 function confirmOrder() {
     const totalOrders = document.getElementById('totalOrders');
     const now = new Date();
@@ -78,6 +86,7 @@ function confirmOrder() {
         if(totalOrders && parsedValue > 0){
             let orderData = JSON.parse(localStorage.getItem("orderData")?? "[]");
             orderData.push({
+                orderId: generateOrderToken(),
                 customerName: loggedUser.user,
                 email: loggedUser.email,
                 orderDate: now,
