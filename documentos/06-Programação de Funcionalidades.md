@@ -100,7 +100,7 @@ Ernane Henrique de Oliveira
 
 ### Tela de login
 
-[Adicione imagem da funcionalidade/tela]
+[Adicione imagem da funcionalidade/tela] 
 
 
 #### Requisito atendido
