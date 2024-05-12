@@ -4,9 +4,9 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 [Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
 
-### Dashboard
+### Título da funcionalidade
 
-<img src="pmv-ads-2024-1-e1-proj-web-t5-pmv-ads-2024-1-e1-projsysfap\documentos\DashboardSFAP.png" alt="imagem-dashboard">
+[Adicione imagem da funcionalidade/tela] 
 
 
 #### Requisito atendido
