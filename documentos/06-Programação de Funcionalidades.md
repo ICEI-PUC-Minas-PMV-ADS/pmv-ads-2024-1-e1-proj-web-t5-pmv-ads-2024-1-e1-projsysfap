@@ -4,6 +4,36 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 [Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
 
+### Dashboard
+
+[[Adicione imagem da funcionalidade/tela]] <img src="https://photos.fife.usercontent.google.com/pw/AP1GczOcRYbdyJbtsNTuYuTZ4dRfcSk2sppNl1v9HP_hGJt-NPOYx6YTsG1r=s182-no?authuser=0" alt="imagem-teste">
+
+
+#### Requisito atendido
+
+[RF-X: adicione a descrição do requisito atendido]
+
+
+#### Artefatos da funcionalidade
+
+[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+
+
+#### Estrutura de Dados
+
+[Caso exista estrutura de dados, adicione aqui]
+
+
+#### Instruções de acesso
+
+[Adicione as orientações de acesso à funcionalidade]
+
+
+#### Responsável
+
+[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+
+
 ### Título da funcionalidade
 
 [Adicione imagem da funcionalidade/tela]
@@ -33,6 +63,92 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 [Adicione nome do responsável pelo desenvolvimento da funcionalidade]
 
+### Título da funcionalidade
+
+[Adicione imagem da funcionalidade/tela]
+
+
+#### Requisito atendido
+
+[RF-X: adicione a descrição do requisito atendido]
+
+
+#### Artefatos da funcionalidade
+
+[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+
+
+#### Estrutura de Dados
+
+[Caso exista estrutura de dados, adicione aqui]
+
+
+#### Instruções de acesso
+
+[Adicione as orientações de acesso à funcionalidade]
+
+
+#### Responsável
+
+[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+
+### Título da funcionalidade
+
+[Adicione imagem da funcionalidade/tela]
+
+
+#### Requisito atendido
+
+[RF-X: adicione a descrição do requisito atendido]
+
+
+#### Artefatos da funcionalidade
+
+[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+
+
+#### Estrutura de Dados
+
+[Caso exista estrutura de dados, adicione aqui]
+
+
+#### Instruções de acesso
+
+[Adicione as orientações de acesso à funcionalidade]
+
+
+#### Responsável
+
+[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+
+### Título da funcionalidade
+
+[Adicione imagem da funcionalidade/tela]
+
+
+#### Requisito atendido
+
+[RF-X: adicione a descrição do requisito atendido]
+
+
+#### Artefatos da funcionalidade
+
+[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+
+
+#### Estrutura de Dados
+
+[Caso exista estrutura de dados, adicione aqui]
+
+
+#### Instruções de acesso
+
+[Adicione as orientações de acesso à funcionalidade]
+
+
+#### Responsável
+
+[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
 
 
 
