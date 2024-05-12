@@ -6,7 +6,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 ### Dashboard
 
-[[Adicione imagem da funcionalidade/tela]] <img src="https://photos.fife.usercontent.google.com/pw/AP1GczOcRYbdyJbtsNTuYuTZ4dRfcSk2sppNl1v9HP_hGJt-NPOYx6YTsG1r=s182-no?authuser=0" alt="imagem-teste">
+[[Adicione imagem da funcionalidade/tela]] 
 
 
 #### Requisito atendido
