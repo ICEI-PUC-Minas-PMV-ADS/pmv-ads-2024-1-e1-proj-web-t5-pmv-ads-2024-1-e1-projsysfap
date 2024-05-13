@@ -6,7 +6,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 ### Dashboard
 
-<img src="img/DashboardSFAP.png" alt="protótipo-dashboad">
+<img src="img/DashboardSFAP.png" alt="protótipo-dashboard">
 
 
 #### Requisito atendido
