@@ -6,7 +6,7 @@ O fluxo do usuário é uma representação visual do caminho que um usuário seg
 O fluxograma apresentado na figura 3 detalha as etapas principais que o usuário percorre ao interagir com nosso sistema. Ele fornece uma visão clara e abrangente do processo de interação do usuário. Para visualizar o fluxograma, acesse o link [User Flow SysFAP](https://www.figma.com/file/o4ijwz06UwPZVSKFxsYxub/Untitled?type=whiteboard&node-id=0%3A1&t=ksly9s5fnlxNTF9x-1)
 
 <figure> 
-  <img src="/documentos/img/user_flow.png"
+  <img src="/documentos/img/user-flow.png"
     <figcaption>Figura 3 - Fluxo do usuário</figcaption>
 </figure> 
 
