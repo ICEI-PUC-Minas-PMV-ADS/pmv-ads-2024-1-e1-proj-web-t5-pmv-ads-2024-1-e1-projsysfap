@@ -429,15 +429,31 @@ function init(){
           //Cria a imagem para editar produto
           newCell = newRow.insertCell();
           
-          var pencil = "<img src='../img/pencil.png' width='25px' onClick='editarProduto()'/>";
-          var img = document.createElement("img");
+            if(localStorage.getItem("page")=="cadastrarProduto.html") {
           
-          img.src = '../img/pencil.png';
-          img.width = "25";
-          img.setAttribute("onClick", "editarProduto(this)");
+                var pencil = "<img src='../img/pencil.png' width='25px' onClick='editarProduto()'/>";
+                var img = document.createElement("img");
+                
+                img.src = '../img/pencil.png';
+                img.width = "25";
+                img.setAttribute("onClick", "editarProduto(this)"); 
+                newCell.appendChild(img);
+              }
+              
+             else{
+               
+                var pencil = "<img src='../img/pencil.png' width='25px' onClick='editarProduto()'/>";
+                var img = document.createElement("img");
+                
+                img.src = '../img/pencil.png';
+                img.width = "25";
+                img.setAttribute("onClick", "editarProduto(this); loadPage('cadastrarProduto.html')");
+                newCell.appendChild(img);
+
+               }
 
           //newText = document.createTextNode(pencil);
-          newCell.appendChild(img);
+          
           
           //Cria a imagem para deletar produtos
           newCell = newRow.insertCell();
@@ -567,6 +583,8 @@ function init(){
              //console.log("Data: " + data);
              
              var price = column4.split(" ");
+             
+             localStorage.setItem("editProduct", column1.trim());
 
              document.getElementById("cod").value = column1;
              document.getElementById("name").value = column2;
@@ -578,6 +596,99 @@ function init(){
           });
 
 
+
+  }
+  
+  function editarProduto2(codProduto){
+  
+     var json2 = JSON.parse(localStorage.getItem("products"));
+     var json = JSON.parse(json2);
+     
+     console.log("Is array? " + Array.isArray(json));
+     
+     console.log("Json: " + json);
+     
+     for(var i=0; i<json.length; i++){
+         console.log(json[i]);
+         
+         var a = json[i].id;
+         var b = codProduto.trim();
+     
+         if(a.trim()==b){
+           
+
+
+             var price = json[i].price;
+           
+             document.getElementById("cod").value = json[i].id;
+             document.getElementById("name").value = json[i].name;
+             document.getElementById("category").value = json[i].category;
+             document.getElementById("price").value = price;
+             document.getElementById("instock").value = json[i].instock;
+
+
+         }
+
+     }
+
+
+  }
+  
+  function atualizarProduto(){
+      
+     var json = JSON.parse(localStorage.getItem("products") || []);
+     //var json = JSON.parse(json2);
+     
+     console.log("Json: " + json);
+     console.log("Is array: " + Array.isArray(json));
+     
+     var cod = document.getElementById("cod");
+     
+     cod = cod.value.trim();
+     
+     //console.log("Codigo: " + cod);
+     //console.log("Json: " + json);
+
+
+     for(var i=0; i<json.length; i++){
+        
+        if(json[i].id.trim()==cod){
+
+             json[i].id = document.getElementById("cod").value;
+             json[i].name = document.getElementById("name").value;
+             json[i].category = document.getElementById("category").value;
+             json[i].price = document.getElementById("price").value;
+             json[i].instock = document.getElementById("instock").value;
+        }
+
+     }
+     
+     const product = {
+                id: document.getElementById("cod").value,
+                name: document.getElementById("name").value,
+                category: document.getElementById("category").value,
+                price: document.getElementById("price").value,
+                instock: document.getElementById("instock").value
+
+          };
+          
+     console.log("Json Stringify: " + JSON.stringify(JSON.stringify(json)));
+     
+     var arr =
+
+     localStorage.setItem("products", JSON.stringify(json));
+     
+     var arr = [];
+     arr.push(product);
+     
+     limparFormulario();
+
+     createTable(arr,false);
+
+     alert("Item atualizado com sucesso");
+
+  
+  
 
   }
 

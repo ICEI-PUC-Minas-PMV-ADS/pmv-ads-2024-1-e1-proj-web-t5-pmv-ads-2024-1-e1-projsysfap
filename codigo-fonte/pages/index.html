@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Importar Produtos</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type='text/css'>
+body {
+   background-color: black;
+   margin:0;
+}
+
+#wrapper{
+
+  background-color: #f4f5fa;
+  /*background-color: #a1a4b4;*/
+  width: 80%;
+  min-height : 100%;
+  position: absolute;
+  margin:0 auto;
+  left:10%;
+
+}
+
+#container{
+
+  background-color: white;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  text-align: center;
+
+}
+
+.invisible{
+  display:none;
+}
+
+.visible{
+ display:block;
+}
+
+h1,h2, h3{
+
+text-align: center;
+
+}
+
+#myTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#myTable td, #myTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#myTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#myTable tr:hover {background-color: #ddd;}
+
+#myTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.blue{
+  color: green;
+  font-weight: bold;
+}
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+#buttons{
+  position: relative;
+  margin:0 auto;
+  left:auto;
+  width:100;
+  text-align:center;
+  margin:15px;
+}
+</style>
+</head>
+<body>
+<div id='wrapper'>
+
+<div id='container'>
+    <h1 style='min-width: 100%; background-color: black; color: white'>Sistema SFAP</h1>
+    <h2 style='text-align: center'> Inserir Produtos</h2>
+    <p style='text-align: center'>
+       <input type="file" id="file-selector" accept="json" value='Importar Produtos' class='invisible'>
+    </p>
+    <p id='abrirprodutos'>
+       <a href='listarProdutos.html' class='invisible' id='verProdutos'>Ir para a página de produtos</a>
+       <br/>
+       <a href="download.php" onClick="showInput()" id='baixarTemplate'>Baixar o template de Produtos</a>
+    </p>
+</div>
+
+</div>
+</body>
+<script src="../js/myStock.js"></script>
+<script type='text/javascript'>
+ init();
+ function download(){
+ 
+   window.open("download.php","_blank")
+
+ }
+ 
+ function showInput(){
+    
+    document.getElementById("file-selector").classList.remove('invisible');
+    document.getElementById("file-selector").classList.add('visible');
+
+ }
+
+</script>
+</html>

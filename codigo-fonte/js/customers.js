@@ -1,18 +1,23 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Fun√ß√£o para carregar os usu√°rios do arquivo JSON
+//document.addEventListener("DOMContentLoaded", function() {
+const element = document.getElementById('viewCustomers');
+element.addEventListener('onClick', function() {
+  
+    alert("Hello, world");
+
+    // FunÁ„o para carregar os usu·rios do arquivo JSON
     function loadUsersFromJSON(callback) {
       fetch('../data/users.json') // Carrega o arquivo JSON
         .then(response => response.json()) // Converte a resposta para JSON
-        .then(data => callback(null, data.users)) // Chama o callback com os usu√°rios
+        .then(data => callback(null, data.users)) // Chama o callback com os usu·rios
         .catch(error => callback(error, null)); // Em caso de erro, chama o callback com o erro
     }
     
-    // Fun√ß√£o para exibir os clientes na tabela
+    // FunÁ„o para exibir os clientes na tabela
     function displayCustomers(data) {
       // Seleciona o corpo da tabela
       const clienteTableBody = document.getElementById("clienteTableBody");
   
-      // Limpa qualquer conte√∫do existente na tabela
+      // Limpa qualquer conte˙do existente na tabela
       clienteTableBody.innerHTML = "";
   
       // Adiciona os clientes na tabela
@@ -28,10 +33,10 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   
-    // Chama a fun√ß√£o para carregar os usu√°rios e exibi-los na tabela
+    // Chama a funÁ„o para carregar os usu·rios e exibi-los na tabela
     loadUsersFromJSON((error, users) => {
       if (error) {
-        console.error('Erro ao carregar usu√°rios:', error);
+        console.error('Erro ao carregar usu·rios:', error);
         return;
       }
   
@@ -39,4 +44,3 @@ document.addEventListener("DOMContentLoaded", function() {
       displayCustomers(users);
     });
   });
-  

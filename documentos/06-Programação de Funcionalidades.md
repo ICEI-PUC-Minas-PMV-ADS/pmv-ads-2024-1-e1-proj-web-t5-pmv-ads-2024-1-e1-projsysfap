@@ -1,8 +1,12 @@
 # Programação de Funcionalidades
 
+Implementação da aplicação descritas por meio dos requisitos codificados. 
+
+[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
+
 ### Dashboard
 
-<img src="img/DashboardSFAP.png" alt="protótipo-dashboard">
+[[Adicione imagem da funcionalidade/tela]] 
 
 
 #### Requisito atendido
@@ -18,12 +22,12 @@ RF-03: Gerar relatórios das últimas movimentações, por período
 
 #### Estrutura de Dados
 
-<li>dashboard.html</li>
+[Caso exista estrutura de dados, adicione aqui]
 
 
 #### Instruções de acesso
 
-Ao acessar a home do vendedor e do gerente, o usuario deverá apertar no menu lateral a esquerda em "Dashboard" para acessar a página.
+[Adicione as orientações de acesso à funcionalidade]
 
 
 #### Responsável
@@ -34,7 +38,7 @@ Gabriel Barboza da Gama Reis Silva
 
 ### Clientes
 
-<img src="img/clientesSFAP.png" alt="pagina-clientes">
+[Adicione imagem da funcionalidade/tela]
 
 
 #### Requisito atendido
@@ -44,13 +48,12 @@ Gabriel Barboza da Gama Reis Silva
 
 #### Artefatos da funcionalidade
 
-<li>customers.html</li>
-<li>customers.js</li>
+[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
 
 
 #### Estrutura de Dados
 
-<li>customers.html</li>
+[Caso exista estrutura de dados, adicione aqui]
 
 
 #### Instruções de acesso
@@ -66,28 +69,27 @@ Heitor Flavio Silva Oliveira
 
 ### Meu estoque
 
-<img src="img/meuEstoqueSFAP.png" alt="pagina-meuEstoque">
+[Adicione imagem da funcionalidade/tela]
 
 
 #### Requisito atendido
 
-RF-02: Buscar peças com critérios como nome, código, status (disponível, não disponível), dados de entrada
+[RF-X: adicione a descrição do requisito atendido]
 
 
 #### Artefatos da funcionalidade
 
-<li>myStock.html</li>
-<li>myStock.js</li>
+[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
 
 
 #### Estrutura de Dados
 
-<li>myStock.html</li>
+[Caso exista estrutura de dados, adicione aqui]
 
 
 #### Instruções de acesso
 
-Ao acessar a home do vendedor e do gerente, o usuario deverá apertar no menu lateral a esquerda em "My Stock" para acessar a página.
+[Adicione as orientações de acesso à funcionalidade]
 
 
 #### Responsável
@@ -98,7 +100,7 @@ Ernane Henrique de Oliveira
 
 ### Tela de login
 
-<img src="img/loginSFAP.png" alt="tela-login">
+[Adicione imagem da funcionalidade/tela] 
 
 
 #### Requisito atendido
@@ -108,14 +110,12 @@ Ernane Henrique de Oliveira
 
 #### Artefatos da funcionalidade
 
-<li>login.html</li>
-<li>login.css</li>
-<li>login.js</li>
+[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
 
 
 #### Estrutura de Dados
 
-<li>login.html</li>
+[Caso exista estrutura de dados, adicione aqui]
 
 
 #### Instruções de acesso
@@ -125,13 +125,13 @@ Ernane Henrique de Oliveira
 
 #### Responsável
 
-Erycson Jose da Silva
+[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
 
 <hr>
 
 ### Tela de cadastro
 
-<img src="img/cadastroSFAP.png" alt="tela-cadastro">
+[Adicione imagem da funcionalidade/tela]
 
 #### Requisito atendido
 
@@ -140,14 +140,12 @@ Erycson Jose da Silva
 
 #### Artefatos da funcionalidade
 
-<li>signup.html</li>
-<li>signup.css</li>
-<li>signup.js</li>
+[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
 
 
 #### Estrutura de Dados
 
-<li>signup.html</li>
+[Caso exista estrutura de dados, adicione aqui]
 
 
 #### Instruções de acesso
@@ -157,33 +155,13 @@ Erycson Jose da Silva
 
 #### Responsável
 
-Erycson Jose da Silva
-
-### Tela de Pedidos
-
-<img src="img/pedidosSFAP.png" alt="tela-pedidos">"
-
-#### Requisito atendido
-
-[RF-X: adicione a descrição do requisito atendido]
-
-
-#### Artefatos da funcionalidade
-
-<li>orders.html</li>
+[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
 
 
 
-#### Estrutura de Dados
+> **Links Úteis**:
+> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
+> - [JSON Tutorial](https://www.w3resource.com/JSON)
+> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
+> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
 
-<li>orders.html</li>
-
-
-#### Instruções de acesso
-
-[Adicione as orientações de acesso à funcionalidade]
-
-
-#### Responsável
-
-Pedro Henrique Pires de Souza
