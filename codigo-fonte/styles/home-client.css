@@ -1,0 +1,10 @@
+#productsTable td,
+#orderTable td {
+    vertical-align: middle;
+}
+#productsTable td .btn.btn-outline-dark:hover{
+    color: #000000;
+}
+#productsTable td input {
+    width: 45px;
+}
