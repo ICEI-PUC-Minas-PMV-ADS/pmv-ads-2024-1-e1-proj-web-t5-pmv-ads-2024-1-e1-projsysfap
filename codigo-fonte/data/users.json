@@ -1,7 +1,7 @@
 {
     "users": [
       {
-        "fullName": "JoÃ£o Silva",
+        "fullName": "João Silva",
         "phoneNumber": "33 98765-5982",
         "email": "silva@gmail.com",
         "accessProfile": "cliente"
@@ -27,3 +27,4 @@
       
     ]
   }
+  
