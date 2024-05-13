@@ -163,4 +163,31 @@ Erycson Jose da Silva
 
 Erycson Jose da Silva
 
+### Tela de Pedidos
 
+<img src="img/pedidosSFAP.png" alt="tela-pedidos">"
+
+#### Requisito atendido
+
+[RF-X: adicione a descrição do requisito atendido]
+
+
+#### Artefatos da funcionalidade
+
+<li>orders.html</li>
+
+
+
+#### Estrutura de Dados
+
+<li>orders.html</li>
+
+
+#### Instruções de acesso
+
+[Adicione as orientações de acesso à funcionalidade]
+
+
+#### Responsável
+
+Pedro Henrique Pires de Souza
