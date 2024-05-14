@@ -25,6 +25,6 @@ O código que foi usado para criar os elementos mencionados, pode ser acessado n
 <h3><b>Tela pedidos</b></h3>
 <p>Exibe a tabela com informações dos pedidos realizados no sistema</p>
 <figure> 
-  <img src="/documentos/img/SYSFAP_cadastro.png">
+  <img src="/documentos/img/SYSFAP_pedidos.png">
   <figcaption>Figura 3 - Tela de Pedidos
 </figure>
