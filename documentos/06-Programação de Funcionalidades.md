@@ -7,7 +7,8 @@
 
 #### Requisito atendido
 
-RF-03: Gerar relatórios das últimas movimentações, por período
+<li> RF-03: Gerar relatórios das últimas movimentações, por período;</li>
+<li>RF-09:	O sistema deve ter uma função para visualização do fluxo de mercadorias.</li>
 
 
 #### Artefatos da funcionalidade
@@ -39,7 +40,7 @@ Gabriel Barboza da Gama Reis Silva
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+<li>RF-05:	Permitir que o gerente adicione, remova e atualize usuários</li>
 
 
 #### Artefatos da funcionalidade
@@ -55,7 +56,8 @@ Gabriel Barboza da Gama Reis Silva
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+Ao acessar a home do vendedor e do gerente, o usuario deverá apertar no menu lateral a esquerda em "Customers" para acessar a página.
+
 
 
 #### Responsável
@@ -71,7 +73,7 @@ Heitor Flavio Silva Oliveira
 
 #### Requisito atendido
 
-RF-02: Buscar peças com critérios como nome, código, status (disponível, não disponível), dados de entrada
+<li>RF-02: Buscar peças com critérios como nome, código, status (disponível, não disponível), dados de entrada</li>
 
 
 #### Artefatos da funcionalidade
@@ -103,7 +105,7 @@ Ernane Henrique de Oliveira
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+<li>RF-10:	O sistema deve permitir ao usuario que possa realizar login no site</li>
 
 
 #### Artefatos da funcionalidade
@@ -120,7 +122,7 @@ Ernane Henrique de Oliveira
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+Ao acessar o sistema o usuário é redirecionado automaticamente para a pagina de login do site
 
 
 #### Responsável
@@ -135,7 +137,7 @@ Erycson Jose da Silva
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+<li>RF-10	O sistema deve permitir ao usuario que possa realizar cadastro e fazer login no site</li>
 
 
 #### Artefatos da funcionalidade
@@ -152,20 +154,20 @@ Erycson Jose da Silva
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+Caso o usuário não tenha um cadastro ativo no sistema, ele deverá clicar em "Signup" na tela de login, assim ele será redirecionado a uma pagina em que ele poderá realizar o seu cadastro no site
 
 
 #### Responsável
 
 Erycson Jose da Silva
 
-### Tela de Pedidos
+### Pagina de Pedidos
 
 <img src="img/pedidosSFAP.png" alt="tela-pedidos">"
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+<li>RF-11:	O sistema deve permitir ao vendedor e ao gerente a visualização dos pedidos realizados</li>
 
 
 #### Artefatos da funcionalidade
@@ -181,7 +183,7 @@ Erycson Jose da Silva
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+Ao acessar a home do vendedor e do gerente, o usuario deverá apertar no menu lateral a esquerda em "Orders" para acessar a página.
 
 
 #### Responsável
