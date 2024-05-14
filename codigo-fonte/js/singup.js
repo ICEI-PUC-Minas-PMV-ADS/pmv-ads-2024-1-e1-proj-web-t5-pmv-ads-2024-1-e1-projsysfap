@@ -37,10 +37,6 @@ class FormValidator {
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     this.validate(element,regexPassword,"Senha deve ter no mínimo 8 caracteres, entre eles 1 letra minúscula, 1 letra maiúscula, 1 número e 1 caractere especial.")
   }
-  static validatePhoneNumber(element){
-    const regexPhoneNumber = /^(\(\d{2}\)\s)?(9\d{4}-\d{4})$/;
-    this.validate(element,regexPhoneNumber,"Insira um número de telefone válido (XX) 9XXXX-XXXX")
-  }
 
   static validateEmail(element){
     const value = element.value.trim();
@@ -78,9 +74,6 @@ function validateInput(inputElement) {
     case "new-password":
       FormValidator.validatePassword(inputElement);
       break;
-    case "phoneNumber":
-      FormValidator.validatePhoneNumber(inputElement);
-      break;
     default:
       break;
   }
@@ -103,20 +96,18 @@ document.getElementById("signupForm").addEventListener("submit", function(e){
   const email = this.querySelector("#email");
   const password = this.querySelector("#new-password");
   const accessProfile = this.querySelector("#accessProfile");
-  const phoneNumber = this.querySelector("#phoneNumber");
 
   if (accessProfile.value == "null") {
     accessProfile.classList.add("is-invalid");
     accessProfile.focus();
     return;
   }
-  if(fullName.getAttribute("validValue") && email.getAttribute("validValue") && password.getAttribute("validValue") && phoneNumber.getAttribute("validValue")){
+  if(fullName.getAttribute("validValue") && email.getAttribute("validValue") && password.getAttribute("validValue")){
     let signupData = JSON.parse(localStorage.getItem("signupData")?? "[]");
     
     signupData.push({
       user: fullName.value,
       email: email.value,
-      phoneNumber: phoneNumber.value,
       accessProfile: accessProfile.value,
       password: password.value,
     });
