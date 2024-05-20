@@ -17,7 +17,7 @@ a seu estoque de produtos.
 * Pedro Henrique Pires de Souza
 * Gabriel Barboza da Gama Reis Silva
 * Erycson Jose da Silva
-* Matheus Carlos de Souza Bezerra de Oliveira
+
 
 ## Orientador
 

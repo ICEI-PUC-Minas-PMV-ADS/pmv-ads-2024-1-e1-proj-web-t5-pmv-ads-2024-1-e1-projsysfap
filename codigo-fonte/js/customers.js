@@ -1,35 +1,8 @@
- <div>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="./home.html">
-                <img src="../assets/svg/Home.svg" alt="Home">
-              </a></li>
-              <li class="breadcrumb-item active" aria-current="page">Customers</li>
-            </ol>
-        </nav>
-        <h1>Customers</h1>
-        <p><button style="display:none" id='viewCustomers' value='Ver clientes'>Ver clientes</button></p>
-        <table class='table table-striped table-success'>
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Nome Completo</th>
-              <th scope="col">NÃºmero de Telefone</th>
-              <th scope="col">E-mail</th>
-            </tr>
-          </thead>
-          <tbody id="clienteTableBody">
-          </tbody>
-          <!-- Os dados do cliente serÃ£o inseridos aqui-->
-        </table>
-      </div>
-    
-    <script src="../js/customers.js"></script>
-    <script type='text/javascript'>
-    const element = document.getElementById('viewCustomers');
-    
-
-
-    element.addEventListener("click", function() {
+//document.addEventListener("DOMContentLoaded", function() {
+const element = document.getElementById('viewCustomers');
+element.addEventListener('onClick', function() {
+  
+    alert("Hello, world");
 
     // Função para carregar os usuários do arquivo JSON
     function loadUsersFromJSON(callback) {
@@ -71,7 +44,3 @@
       displayCustomers(users);
     });
   });
-  
-    element.click();
-
-    </script>

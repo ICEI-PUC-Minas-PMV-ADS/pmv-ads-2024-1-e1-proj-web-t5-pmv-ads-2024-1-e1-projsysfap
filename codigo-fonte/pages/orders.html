@@ -1,12 +1,42 @@
 <div>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="./home.html">
-            <img src="../assets/svg/Home.svg" alt="Home">
-          </a></li>
-          <li class="breadcrumb-item active" aria-current="page">Orders</li>
-        </ol>
-    </nav>
-    <h1>Orders</h1>
-    <p>Esta é a página sobre nós.</p>
-</div>
+      <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./home.html">
+              <img src="../assets/svg/Home.svg" alt="Home">
+            </a></li>
+            <li class="breadcrumb-item active" aria-current="page">Orders</li>
+          </ol>
+      </nav>
+      <main class="bg-body-tertiary px-3 pt-2 pb-4">
+        <h1 class="fs-3">Resumo dos pedidos</h1>
+        <div class="row mb-3">
+          <div class="card px-3  py-2 border-0" style="width: 18rem;">
+            <img style='display: none' src="../assets/svg/BagIcon.svg" width="36px" height="36px" alt="total de pedidos">
+            <div class="card-body p-0 mt-4">
+              <h5 class="card-title fs-6">Total de pedidos</h5>
+              <p class="card-text" id="ordersPage_totalOrders">00</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-white px-3 pt-2 pb-5 rounded-2">
+            <h1 class="fs-2 text-center border-bottom">Lista de pedidos</h1>
+              <div class="row overflow-scroll p-1"style="height: 570px;">
+                <table class="table table-striped table-success" id="ordersTable">
+                  <thead>
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">Cliente</th>
+                      <th scope="col">Data do pedido</th>
+                      <th scope="col">Valor do pedido</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type='text/javascript'>fetchOrders();</script>

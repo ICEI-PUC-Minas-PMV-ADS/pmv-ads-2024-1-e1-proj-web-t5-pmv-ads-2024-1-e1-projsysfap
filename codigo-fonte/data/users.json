@@ -1,0 +1,30 @@
+{
+    "users": [
+      {
+        "fullName": "João Silva",
+        "phoneNumber": "33 98765-5982",
+        "email": "silva@gmail.com",
+        "accessProfile": "cliente"
+      },
+      {
+        "fullName": "Maria Souza",
+        "phoneNumber": "32 99654-3212",
+        "email": "maria@gmail.com",
+        "accessProfile": "cliente"
+      },
+      {
+        "fullName": "Lucas Santos",
+        "phoneNumber": "33 98465-4952",
+        "email": "joao@gmail.com",
+        "accessProfile": "cliente"
+      },
+      {
+        "fullName": "Heitor Oliveira",
+        "phoneNumber": "32 99854-3312",
+        "email": "heitor@gmail.com",
+        "accessProfile": "cliente"
+      }
+      
+    ]
+  }
+  
