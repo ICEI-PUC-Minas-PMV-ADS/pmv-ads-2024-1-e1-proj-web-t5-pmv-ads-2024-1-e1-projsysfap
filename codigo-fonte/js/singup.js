@@ -113,6 +113,11 @@ document.getElementById("signupForm").addEventListener("submit", function(e){
     });
     localStorage.setItem("signupData", JSON.stringify(signupData));
     alert("Usuário cadastrado com sucesso!");
-    window.location.href = "../pages/login.html";
+
+    if(accessProfile.value === "vendedor"){
+      window.location.href = "../pages/home-client.html";
+    } else {
+      window.location.href = "../pages/home.html";
+    }
   }
 });
