@@ -38,13 +38,16 @@ class FormValidator {
     this.validate(element,regexPassword,"Senha deve ter no mínimo 8 caracteres, entre eles 1 letra minúscula, 1 letra maiúscula, 1 número e 1 caractere especial.")
   }
 
-  static validateEmail(element){
+  static async validateEmail(element){
     const value = element.value.trim();
     const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     const isValid = regexEmail.test(value);
     let userList = JSON.parse(localStorage.getItem("signupData")) || [];
-    const registeredEmail = userList.some((user) => user.email === value);
-    const isUniqueEmail = !registeredEmail;
+    const registeredEmailLocalStorage = userList.some((user) => user.email === value);
+    const response = await fetch("../data/users.json");
+    const {users} = await response.json();
+    const registeredEmailJson = users.some((user)=> user.email === value);
+    const isUniqueEmail = !registeredEmailLocalStorage && !registeredEmailJson;
     const isValidEmail = isValid && isUniqueEmail;
     element.classList.toggle("is-valid", isValidEmail);
     element.classList.toggle("is-invalid", !isValidEmail);
