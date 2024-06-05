@@ -92,12 +92,6 @@ body {
     margin-top: 32px;
 }
 
-.card-title4 {
-    color: #8B8D97;
-    font-size: 14px;
-    margin-top: 62px;
-    margin-bottom: 8px;
-}
 
 .card3 {
     display: flex;
@@ -185,7 +179,7 @@ body {
 }
 
 .card-text {
-    color: #45464E;
+    color: rgba(69, 70, 78, 1);
     margin-top: 0;
     margin-bottom: 0;
     font-size: 20px;
@@ -218,6 +212,7 @@ body {
 .icon4 {
     width: 36;
     height: 36;
+    background-color: #5570F1;
 }
 
 .card-body4 {
@@ -288,6 +283,8 @@ body {
     margin-right: 21px;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .custom-card {
@@ -311,7 +308,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: flex-start;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
 }
 
 .mt-3 {
@@ -341,7 +340,6 @@ body {
 .dataPedido {
     font-size: 12px;
     color: rgb(166, 168, 177);
-    margin-left: 175px;
     margin-bottom: 7px;
 }
 
@@ -355,7 +353,6 @@ body {
     background-color: rgba(245, 126, 119, 0.12);
     width: 77px;
     height: 19px;
-    margin-left: 165px;
     padding: 0px;
     border: 0;
 }
@@ -370,7 +367,6 @@ body {
     background-color: rgba(50, 147, 111, 0.12);
     width: 77px;
     height: 19px;
-    margin-left: 165px;
     padding: 0px;
     border: 0;
 }
@@ -391,5 +387,31 @@ body {
     height: 363px;
     background-color: white;
     border-radius: 12px;
+    justify-content: space-around;
+    align-items: flex-end;
 
+}
+
+.iconscards {
+    border-radius: 8px;
+}
+
+.custombtn {
+    padding: 0px;
+    border: none;
+    border-radius: 8px;
+    background-color: none;
+    color: none;
+}
+
+.custombtn2 {
+    background-color: #5570F1;
+    padding: 0px;
+    border: none;
+    border-radius: 8px;
+}
+
+.tituloPedidos {
+    display: flex;
+    justify-content: center;
 }
