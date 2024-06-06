@@ -1,28 +1,50 @@
 <div>
   <nav aria-label="clientes">
-    <ol class="clientes">
-      <li class="clientes-item"><a href="./home.html">
-          <img src="../assets/svg/Home.svg" alt="Home">
-        </a></li>
-      <li class="clientes-item active" aria-current="page">Customers</li>
-    </ol>
+      <ol class="clientes">
+          <li class="clientes-item"><a href="./home.html">
+                  <img src="../assets/svg/Home.svg" alt="Home">
+              </a></li>
+          <li class="clientes-item active" aria-current="page">Customers</li>
+      </ol>
   </nav>
   <h1>Customers</h1>
   <p><button id='viewCustomers' value='Ver clientes'>Ver clientes</button></p>
   <table class='table table-striped table-success'>
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">Nome Completo</th>
-        <th scope="col">Número de Telefone</th>
-        <th scope="col">E-mail</th>
-      </tr>
-    </thead>
-    <tbody id="clienteTableBody">
-    </tbody>
-    <!-- Os dados do cliente serão inseridos aqui-->
+      <thead class="thead-dark">
+          <tr>
+              <th scope="col">Nome Completo</th>
+              <th scope="col">Número de Telefone</th>
+              <th scope="col">E-mail</th>
+              <th scope="col">Ações</th>
+          </tr>
+      </thead>
+      <tbody id="clienteTableBody">
+      </tbody>
   </table>
+  <h2 id="formTitle">Adicionar Cliente</h2>
+  <form id="customerForm">
+      <input type="hidden" id="userId" />
+      <div>
+          <label for="fullName">Nome Completo:</label>
+          <input type="text" id="fullName" name="fullName" required />
+      </div>
+      <div>
+          <label for="phoneNumber">Número de Telefone:</label>
+          <input type="text" id="phoneNumber" name="phoneNumber" required />
+      </div>
+      <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required />
+      </div>
+      <div>
+          <button type="submit">Salvar</button>
+          <button type="reset" id="resetForm">Cancelar</button>
+      </div>
+  </form>
 </div>
 
 <script src="../js/customers.js"></script>
-
-     
