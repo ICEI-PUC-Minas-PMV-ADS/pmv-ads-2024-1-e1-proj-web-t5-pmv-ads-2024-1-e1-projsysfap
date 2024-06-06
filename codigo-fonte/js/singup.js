@@ -117,7 +117,7 @@ document.getElementById("signupForm").addEventListener("submit", function(e){
     localStorage.setItem("signupData", JSON.stringify(signupData));
     alert("Usuário cadastrado com sucesso!");
 
-    if(accessProfile.value === "vendedor"){
+    if(accessProfile.value === "cliente"){
       window.location.href = "../pages/home-client.html";
     } else {
       window.location.href = "../pages/home.html";

@@ -15,7 +15,7 @@ document.getElementById("signinForm").addEventListener("submit", function(e){
             formInputs.removeChild(errorMessage);
         }
         localStorage.setItem("loggedUser",JSON.stringify(registeredUser));
-        if(registeredUser.accessProfile === "vendedor"){
+        if(registeredUser.accessProfile === "cliente"){
             window.location.href = "../pages/home-client.html";
         } else {
             window.location.href = "../pages/home.html";
