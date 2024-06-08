@@ -1,4 +1,3 @@
-
 document.getElementById("signinForm").addEventListener("submit", function(e){
     e.preventDefault();
     const email = this.querySelector("#email");
@@ -15,7 +14,7 @@ document.getElementById("signinForm").addEventListener("submit", function(e){
             formInputs.removeChild(errorMessage);
         }
         localStorage.setItem("loggedUser",JSON.stringify(registeredUser));
-        if(registeredUser.accessProfile === "vendedor"){
+        if(registeredUser.accessProfile === "cliente"){
             window.location.href = "../pages/home-client.html";
         } else {
             window.location.href = "../pages/home.html";
@@ -25,7 +24,7 @@ document.getElementById("signinForm").addEventListener("submit", function(e){
         password.classList.add("is-invalid");
         if(!errorMessage){
             const newElement = document.createElement("span");
-            newElement.textContent = "Usuário ou senha incorreto";
+            newElement.textContent = "UsuÃ¡rio ou senha incorreto";
             newElement.classList.add("invalid-feedback","position-absolute","text-center","d-inline");
             formInputs.appendChild(newElement);
         }
