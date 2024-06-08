@@ -38,7 +38,7 @@ fetchProducts();
 let orders = {};
 
 function selectProduct(id, name, price) {
-    let quantity = document.getElementById('quantity' + id).value;
+    let quantity = Number(document.getElementById('quantity' + id).value);
     let totalPerProduct = quantity * price;
     if(quantity > 0){
         orders[id] = {name, quantity, totalPerProduct};
@@ -90,6 +90,7 @@ function confirmOrder() {
                 customerName: loggedUser.user,
                 email: loggedUser.email,
                 orderDate: now,
+                products: orders,
                 totalOrder: parsedValue,
             });
         
