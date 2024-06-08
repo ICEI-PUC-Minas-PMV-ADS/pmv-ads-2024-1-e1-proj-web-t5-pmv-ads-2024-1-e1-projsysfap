@@ -1,10 +1,16 @@
-function loadPage(page) {
+function loadPage(page, sectionTitle) {
     fetch(page)
 .then(function (data) {
   return data.text();
 })
 .then(function (html) {
+  
+  if(sectionTitle== null){
+     sectionTitle="Section Title";
+  }
+
   document.getElementById('content').innerHTML = html;
+  document.getElementById('sectionTitle').innerHTML = sectionTitle;
   var scripts = document.getElementById("content").querySelectorAll("script");
   for (var i = 0; i < scripts.length; i++) {
     if (scripts[i].innerText) {
