@@ -93,7 +93,7 @@ function init(){
           //console.log("Stringify result: " + JSON.stringify(JSON.stringify(result)));
           
           if(name.value=="" || category.value=="" || price.value=="" || instock.value==""){
-            alert("Por favor, preencha todos os campos do formul·rio.");
+            alert("Por favor, preencha todos os campos do formul√°rio.");
           }
           
           else{
@@ -279,8 +279,13 @@ function init(){
 
 
   const writeToTextFile = () => {
-    
-  let text = JSON.parse(localStorage.getItem("products"));
+
+  let text =JSON.parse(localStorage.getItem("products"));
+  
+  console.log("Json a ser exportado");
+  console.log(text);
+  console.log("Is text array? " + Array.isArray(text));
+
   let fileName = "products.json";
   let textFile = null;
   const makeTextFile = (text) => {
@@ -415,14 +420,14 @@ function init(){
           
            // Append a text node to the cell
            newCell = newRow.insertCell();
-           newText = document.createTextNode("DisponÌvel");
-           newCell.className = 'blue';
+           newText = document.createTextNode("Dispon√≠vel");
+           newCell.className = 'text-success';
            newCell.appendChild(newText);
           }
           else{
           newCell = newRow.insertCell();
           newText = document.createTextNode("Esgotado");
-          newCell.className = 'red';
+          newCell.className = 'text-danger';
           newCell.appendChild(newText);
           }
           
@@ -543,7 +548,7 @@ function init(){
     document.getElementById("file-selector").classList.remove('invisible');
     document.getElementById("file-selector").classList.add('visible');
 
-    document.getElementById("instrucoes").innerHTML = "ApÛs inserir os seus arquivos no template, importe o arquivo no bot„o abaixo";
+    document.getElementById("instrucoes").innerHTML = "Ap√≥s inserir os seus arquivos no template, importe o arquivo no bot√£o abaixo";
     
     document.getElementById("baixarTemplate").classList.remove('visible');
     document.getElementById("baixarTemplate").classList.add('invisible');
@@ -636,29 +641,43 @@ function init(){
   
   function atualizarProduto(){
       
-     var json = JSON.parse(localStorage.getItem("products") || []);
+     var json = JSON.parse(localStorage.getItem("products"));
+     var json2 = JSON.parse(json);
+     //console.log("json2: " + json2);
+     //console.log("json[0].id = " + json2[0].id);
+
+     var arr = [];
+
+     arr.push(json);
+
+     json = arr;
+     //console.log("Arr: " + arr);
+     //console.log("Arr is array? " + Array.isArray(arr));
      //var json = JSON.parse(json2);
      
-     console.log("Json: " + json);
-     console.log("Is array: " + Array.isArray(json));
-     
+     //console.log("Json: " + json);
+     //console.log("Is array: " + Array.isArray(json));
+
      var cod = document.getElementById("cod");
-     
+
      cod = cod.value.trim();
-     
+
      //console.log("Codigo: " + cod);
      //console.log("Json: " + json);
+     
+     //console.log("Arr length: " + arr.length);
+     //console.log("Arr[0].id = " + arr[0].id);
 
 
-     for(var i=0; i<json.length; i++){
-        
-        if(json[i].id.trim()==cod){
+     for(var i=0; i<json2.length; i++){
 
-             json[i].id = document.getElementById("cod").value;
-             json[i].name = document.getElementById("name").value;
-             json[i].category = document.getElementById("category").value;
-             json[i].price = document.getElementById("price").value;
-             json[i].instock = document.getElementById("instock").value;
+        if(json2[i].id.trim()==cod){
+
+             json2[i].id = document.getElementById("cod").value;
+             json2[i].name = document.getElementById("name").value;
+             json2[i].category = document.getElementById("category").value;
+             json2[i].price = document.getElementById("price").value;
+             json2[i].instock = document.getElementById("instock").value;
         }
 
      }
@@ -672,11 +691,11 @@ function init(){
 
           };
           
-     console.log("Json Stringify: " + JSON.stringify(JSON.stringify(json)));
+     //console.log("Json Stringify: " + JSON.stringify(JSON.stringify(json)));
      
      var arr =
 
-     localStorage.setItem("products", JSON.stringify(json));
+     localStorage.setItem("products", JSON.stringify(JSON.stringify(json2)));
      
      var arr = [];
      arr.push(product);
@@ -749,7 +768,7 @@ function init(){
           newCell.className = 'blue';
 
           // Append a text node to the cell
-          newText = document.createTextNode("DisponÌvel");
+          newText = document.createTextNode("Dispon√≠vel");
           newCell.appendChild(newText);
 
           }
@@ -763,7 +782,7 @@ function init(){
 
       }
       
-      var question = ("Deseja salvar os dados na memÛria do navegador?");
+      var question = ("Deseja salvar os dados na mem√≥ria do navegador?");
 
       if(window.confirm(question)){
       
