@@ -1,80 +1,79 @@
-[{
-   "id": "Product001",
-   "name": "Aro Cromado",
-   "category": "rodas",
-   "price": 300.80,
-   "instock": 15
- },
-   {
-   "id": "Product002",
-   "name": "Roda de liga leve",
-   "category": "rodas",
-   "price": 800.10,
-   "instock": 20
- },
- {
- "id": "Product003",
-  "name": "Vela de Ignicao",
-  "category": "eletrica",
-  "price": 180.50,
-  "instock": 0
-
+[
+  {
+    "id": "Product001",
+    "name": "Aro Cromado",
+    "category": "rodas",
+    "price": 300.80,
+    "instock": 15
   },
   {
-   "id": "Product004",
-   "name": "Pneu",
-   "category": "pneus",
-   "price": 800.20,
-   "instock": 12
-   },
-   {
+    "id": "Product002",
+    "name": "Roda de liga leve",
+    "category": "rodas",
+    "price": 800.10,
+    "instock": 20
+  },
+  {
+    "id": "Product003",
+    "name": "Vela de Ignicao",
+    "category": "eletrica",
+    "price": 180.50,
+    "instock": 0
+  },
+  {
+    "id": "Product004",
+    "name": "Pneu",
+    "category": "pneus",
+    "price": 800.20,
+    "instock": 12
+  },
+  {
     "id": "Product005",
-    "name": "Carborador",
+    "name": "Carburador",
     "category": "eletrica",
     "price": 1200.00,
     "instock": 8
-    },
-    {
-   "id": "Product006",
-   "name": "Pneu",
-   "category": "pneus",
-   "price": 800.20,
-   "instock": 1
-   },
-   {
+  },
+  {
+    "id": "Product006",
+    "name": "Filtro de Ar",
+    "category": "filtro",
+    "price": 35.90,
+    "instock": 30
+  },
+  {
     "id": "Product007",
-    "name": "Carborador",
-    "category": "eletrica",
-    "price": 1200.00,
-    "instock": 0
-    },
-    {
+    "name": "Amortecedor",
+    "category": "suspensao",
+    "price": 450.00,
+    "instock": 10
+  },
+  {
     "id": "Product008",
-   "name": "Pneu",
-   "category": "pneus",
-   "price": 800.20,
-   "instock": 0
-   },
-   {
+    "name": "Sensor de Oxigênio",
+    "category": "motor",
+    "price": 120.75,
+    "instock": 5
+  },
+  {
     "id": "Product009",
-    "name": "Carborador",
-    "category": "eletrica",
-    "price": 1200.00,
-    "instock": 2
-    },
-    {
-   "id": "Product010",
-   "name": "Pneu",
-   "category": "pneus",
-   "price": 800.20,
-   "instock": 27
-   },
-   {
-    "id": "Product011",
-    "name": "Carborador",
-    "category": "eletrica",
-    "price": 1200.00,
+    "name": "Junta do Cabeçote",
+    "category": "motor",
+    "price": 65.25,
     "instock": 15
-    }
-
+  },
+  {
+    "id": "Product010",
+    "name": "Pastilha de Freio",
+    "category": "freios",
+    "price": 75.50,
+    "instock": 25
+  },
+  {
+    "id": "Product011",
+    "name": "Correia Dentada",
+    "category": "motor",
+    "price": 28.80,
+    "instock": 20
+  }
 ]
