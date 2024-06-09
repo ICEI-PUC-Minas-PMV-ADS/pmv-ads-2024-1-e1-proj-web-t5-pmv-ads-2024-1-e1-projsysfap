@@ -31,13 +31,13 @@
                     </button>
                   </li>
                   <li>
-                    <button class="btn d-flex align-items-center" data-bs-toggle="button" onclick="loadPage('./orders.html')">
+                    <button class="btn d-flex align-items-center" data-bs-toggle="button" onclick="loadPage('./orders.html','Pedidos')">
                         <img class="me-3" src="../assets/svg/Bag.svg" alt="Orders" >
                       Pedidos
                     </button>
                   </li>
                   <li>
-                    <button class="btn d-flex align-items-center" data-bs-toggle="button" onclick="loadPage('./customers.html')">
+                    <button class="btn d-flex align-items-center" data-bs-toggle="button" onclick="loadPage('./customers.html','Clientes')">
                         <img class="me-3" src="../assets/svg/customers.svg" alt="Customers" >
                       Clientes
                     </button>
@@ -49,7 +49,7 @@
                     </button>
                   </li>
                   <li>
-                    <button class="btn d-flex align-items-center" data-bs-toggle="button" onclick="loadPage('./profile.html')">
+                    <button class="btn d-flex align-items-center" data-bs-toggle="button" onclick="loadPage('./profile.html','Perfil')">
                         <img class="me-3" src="../assets/svg/Profile.svg" alt="Profile" >
                       Perfil
                     </button>
@@ -86,6 +86,7 @@
                   <img src="../assets/img/profile.png" alt="">
                 </div>
               </div>
+            <h2 id='sectionTitle'>Section title</h2>
             <div id="content"></div>
           </main>
           <div class="offcanvas-xl offcanvas-start d-xl-none" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
@@ -109,25 +110,25 @@
                 </button>
               </li>
               <li>
-                <button class="btn d-flex mb-1 align-items-center" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" onclick="loadPage('./orders.html')">
+                <button class="btn d-flex mb-1 align-items-center" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" onclick="loadPage('./orders.html', 'Pedidos')">
                     <img class="me-3"src="../assets/svg/Bag.svg" alt="Orders" >
                   Pedidos
                 </button>
               </li>
               <li>
-                <button class="btn d-flex mb-1 align-items-center" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" onclick="loadPage('./customers.html')">
+                <button class="btn d-flex mb-1 align-items-center" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" onclick="loadPage('./customers.html', 'Clientes')">
                     <img class="me-3"src="../assets/svg/customers.svg" alt="Customers" >
                   Clientes
                 </button>
               </li>
               <li>
-                <button class="btn d-flex mb-1 align-items-center" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" onclick="loadPage('./myStock.html'); showLocalStorage('n')">
+                <button class="btn d-flex mb-1 align-items-center" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" onclick="loadPage('./myStock.html', 'Estoque'); showLocalStorage('n')">
                     <img class="me-3"src="../assets/svg/Folder.svg" alt="Stock" >
                   Estoque
                 </button>
               </li>
               <li>
-                <button class="btn d-flex mb-1 align-items-center" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" onclick="loadPage('./profile.html')">
+                <button class="btn d-flex mb-1 align-items-center" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" onclick="loadPage('./profile.html','Perfil')">
                     <img class="me-3"src="../assets/svg/Setting.svg" alt="Profile" >
                   Perfil
                 </button>
