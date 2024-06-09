@@ -4,10 +4,9 @@
               <li class="breadcrumb-item"><a href="./home.html">
                 <img src="../assets/svg/Home.svg" alt="Home">
               </a></li>
-              <li class="breadcrumb-item active" aria-current="page">Customers</li>
+              <li class="breadcrumb-item active" aria-current="page">Clientes</li>
             </ol>
         </nav>
-        <h1>Customers</h1>
         <p><button style="display:none" id='viewCustomers' value='Ver clientes'>Ver clientes</button></p>
         <table class='table table-striped table-success'>
           <thead class="thead-dark">
@@ -31,20 +30,20 @@
 
     element.addEventListener("click", function() {
 
-    // Função para carregar os usuários do arquivo JSON
+    // Funï¿½ï¿½o para carregar os usuï¿½rios do arquivo JSON
     function loadUsersFromJSON(callback) {
       fetch('../data/users.json') // Carrega o arquivo JSON
         .then(response => response.json()) // Converte a resposta para JSON
-        .then(data => callback(null, data.users)) // Chama o callback com os usuários
+        .then(data => callback(null, data.users)) // Chama o callback com os usuï¿½rios
         .catch(error => callback(error, null)); // Em caso de erro, chama o callback com o erro
     }
     
-    // Função para exibir os clientes na tabela
+    // Funï¿½ï¿½o para exibir os clientes na tabela
     function displayCustomers(data) {
       // Seleciona o corpo da tabela
       const clienteTableBody = document.getElementById("clienteTableBody");
   
-      // Limpa qualquer conteúdo existente na tabela
+      // Limpa qualquer conteï¿½do existente na tabela
       clienteTableBody.innerHTML = "";
   
       // Adiciona os clientes na tabela
@@ -60,10 +59,10 @@
       });
     }
   
-    // Chama a função para carregar os usuários e exibi-los na tabela
+    // Chama a funï¿½ï¿½o para carregar os usuï¿½rios e exibi-los na tabela
     loadUsersFromJSON((error, users) => {
       if (error) {
-        console.error('Erro ao carregar usuários:', error);
+        console.error('Erro ao carregar usuï¿½rios:', error);
         return;
       }
   
