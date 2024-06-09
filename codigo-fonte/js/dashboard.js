@@ -1,12 +1,16 @@
 // Atualiza o elemento no HTML com o texto fornecido
-function atualizarElemento(id, texto) {
-    const element = document.getElementById(id);
+// Define a função atualizarElemento
+function atualizarElemento(elementId, value) {
+    const element = document.getElementById(elementId);
     if (element) {
-        element.textContent = texto;
+        element.textContent = value;
+        return `Elemento com ID "${elementId}" atualizado com valor "${value}".`;
     } else {
-        console.error(`Elemento com id "${id}" não encontrado.`);
+        console.error(`Elemento com ID "${elementId}" não encontrado.`);
+        return `Erro: Elemento com ID "${elementId}" não encontrado.`;
     }
 }
+
 // Carregar dados genéricos do localStorage
 function carregarDadosGenericosDoLocalStorage(chave) {
     const dados = localStorage.getItem(chave);
@@ -266,18 +270,21 @@ const pedidosLocalStorage = localStorage.getItem('orders');
 if (pedidosLocalStorage) {
     try {
         const pedidosRecentes = JSON.parse(pedidosLocalStorage).slice(-9).reverse();
+
+        console.log('Pedidos recentes:', pedidosRecentes);
+
         const iconesProdutos = {
             "Aro Cromado": "../assets/img/aro cromado.png",
-            "Roda de liga leve": "../assets/img/pngegg.png",
+            "Roda de liga leve": "../assets/img/rodaligaleve.png",
             "Vela de Ignicao": "../assets/img/vela.jpeg",
-            "Pneu": "../assets/img/pngegg (1).png",
-            "Carburador": "../assets/img/pngegg (2).png",
-            "Filtro de Ar": "../assets/img/pngegg (3).png",
-            "Amortecedor": "../assets/img/pngegg (4).png",
-            "Sensor de Oxigênio": "../assets/img/pngegg (5).png",
-            "Junta do Cabeçote": "../assets/img/image-removebg-preview_-_2022-07-26t121615.448 (1).png",
-            "Pastilha de Freio": "../assets/img/pngegg (7).png",
-            "Correia Dentada": "../assets/img/pngegg (8).png"
+            "Pneu": "../assets/img/pneu.png",
+            "Carburador": "../carburador.png",
+            "Filtro de Ar": "../assets/img/filtroDeAr.png",
+            "Amortecedor": "../assets/img/amortecedor.png",
+            "Sensor de Oxigênio": "../assets/img/sensorOxigenio.png",
+            "Junta do Cabeçote": "../assets/img/juntaCabecote.png",
+            "Pastilha de Freio": "../assets/img/pastilhaFreio.png",
+            "Correia Dentada": "../assets/img/correiaDentada.png"
         };
 
         pedidosRecentes.forEach((pedido, index) => {
@@ -287,6 +294,7 @@ if (pedidosLocalStorage) {
                 if (iconElement) {
                     iconElement.setAttribute("src", iconSrc);
                 }
+                
             }
             atualizarElemento("produto" + (index + 1), pedido.product);
             atualizarElemento("preco" + (index + 1), `R$${pedido.totalOrder} x ${pedido.amount}`);
@@ -300,6 +308,7 @@ if (pedidosLocalStorage) {
 } else {
     console.log('Não há pedidos armazenados no localStorage.');
 }
+
 
 if (pedidosLocalStorage) {
     try {

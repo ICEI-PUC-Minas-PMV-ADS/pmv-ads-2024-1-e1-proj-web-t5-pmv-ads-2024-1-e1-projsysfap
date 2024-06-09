@@ -1,12 +1,143 @@
 # Registro de Testes de Software
 
-Relatório com as evidências dos testes de software realizados na aplicação pela equipe, baseado no plano de testes pré-definido.
+<span style="color:red">Pré-requisitos: <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t5-pmv-ads-2024-1-e1-projsysfap/blob/main/documentos/04-Projeto%20de%20Interface.md"> Projeto de Interface</a></span>, <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t5-pmv-ads-2024-1-e1-projsysfap/blob/main/documentos/07-Plano%20de%20Testes%20de%20Software.md"> Plano de Testes de Software</a>
 
-Os resultados dos testes funcionais realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste executado]
+Os testes funcionais realizados na aplicação web são descritos a seguir.
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
-|:---|:---|
-| Resultados obtidos | Descrever resultados do teste  |
-| Responsável pela execução do caso de Teste | Nome do integrante da equipe |
+<ol>
+  <li> CT-01: Verificar a Atualização de Quantidade de Produtos
 
-[Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]
+  Responsável: Gabriel.
+
+  <p>No teste em questão foi verificado se a função responsável por calcular a quantidade de total e a quantidade de produtos ativos estava funcionando corretamente, logo em seguida foi feita a verificação da função "atualizarElemento" responsável por atualizar os elementos correspondentes no HTML.</p>
+
+<img src="img/Caso de teste 01.png" alt="Caso de teste 01">
+
+  </li>
+  <hr>
+  
+  <li> CT-02: Verificação da atualização da quantidade de vendas e de pedidos.
+
+  Responsável: Gabriel.
+    
+  <p>No teste em questão foi verificado se a função responsável por calcular a quantidade de vendas e de pedidos estava funcionando corretamente, logo em seguida foi feita a verificação da função "atualizarElemento" responsável por atualizar os elementos correspondentes no HTML.</p>
+    
+<img src="img/Caso de teste 02.png" alt="Caso de teste 02">
+
+  </li>
+  <hr>
+  
+  <li> CT-03: Verifica a atualização do valor total de vendas e se os valores estão sendo exibidos em R$.
+
+Responsável: Gabriel.
+
+  <p>No teste em questão foi verificado o funcionamento da função responsavel por calcular o valor total das vendas, em seguida se a variavel formattedTotalVendas estava retornando o valor formatado corretamente para "R$" e finalmente após isso foi feita a verificação da função "atualizarElemento" responsável por atualizar os elementos correspondentes no HTML. </p>
+
+<img src="img/Caso de teste 03.png" alt="Caso de teste 03">
+
+  </li>
+  <hr>
+  
+  <li> CT-04:  Verificar a Visualização de Pedidos Recentes
+   
+  Responsável: Gabriel. 
+   
+   <p>No teste em questão foi checado o console.log responsável por informar os pedidos recentes, logo em seguida se todos os pedidos estavam com os itens correspondentes corretos</p>
+  
+  </li>
+  <hr>
+
+
+  <li> CT-05: Verificar o login de usuários.
+
+  Responsável: Ana. 
+  
+   <p>Usuário preenche os campos "Email" e "Senha" com valores diferentes do usuário já cadastrado.</p>
+  
+  ![8d33f1db-e0a7-4e41-b956-fde91ac31c63](https://user-images.githubusercontent.com/98122346/174851091-f201d92d-02f9-45c0-8b00-e66358158d8d.jpg)
+
+
+  <p>Se as informações de usuário forem válidas, o login será bem sucedido.</p>
+  
+ ![c555f947-3721-4eee-ad97-5042ce9e6c5e](https://user-images.githubusercontent.com/98122346/174853350-696ef44f-cbc9-4cad-a0e5-7c51d3a67d4b.jpg)
+
+
+  <p> Informações armazenadas no LocalStorage do usuário logado.</p>
+  
+  ![af4b5123-e45f-4356-bd53-11b5c75cb78f](https://user-images.githubusercontent.com/98122346/174853422-4572412d-173c-457b-ade9-7d7fc997445e.jpg)
+
+
+  </li>
+  <hr>
+  
+  <li> CT-06: Verificar o cadastro de livros.
+
+  Responsável: Pedro. 
+    
+  <p> Mensagem de confirmação de cadastro do livro.</p>
+  
+![Captura de Tela 2022-06-21 às 14 15 34](https://user-images.githubusercontent.com/100447878/174859699-0de48c01-faa1-4362-ac5c-f5a9a337e3c8.png)
+
+  <p> Registro disponível na página Livros após o usuário cadastrar o livro.</p>
+  
+![Captura de Tela 2022-06-21 às 15 51 10](https://user-images.githubusercontent.com/100447878/174876692-ebcfba83-0af7-4449-a378-f0e8091227f4.png)  
+
+  <p> Informações armazenadas no LocalStorage após o cadastro do livro.</p>
+  
+  ![Captura de Tela 2022-06-21 às 15 52 42](https://user-images.githubusercontent.com/100447878/174876742-e0b01a57-7503-4719-8a87-3ea07d68964c.png)
+
+  <p> No exemplo abaixo, o usuário tenta fazer o cadastro do livro de maneira incorreta, sem preencher todos os campos, o que não finaliza o cadastro.</p>
+  
+![Captura de Tela 2022-06-21 às 14 14 40](https://user-images.githubusercontent.com/100447878/174859774-24a2ca76-c97f-4ae9-9741-418d536a0e53.png)
+
+![Captura de Tela 2022-06-21 às 14 14 59](https://user-images.githubusercontent.com/100447878/174859799-2f7805e2-ff98-415a-aff3-4898d27c879a.png)
+
+  </li>
+  <hr>
+  
+  <li> CT-07: Verificar o cadastro de tutores.
+
+  Responsável: João. 
+    
+  <p> Mensagem de confirmação de cadastro do tutor.</p>
+  
+   ![image](https://user-images.githubusercontent.com/101907319/174912389-5ad42624-397a-4ac5-b3c9-add2b13880cb.png)
+
+  <p> Registro disponível na página Tutorias após o usuário cadastrar o tutor.</p>
+  
+ ![image](https://user-images.githubusercontent.com/101907319/174912436-6ecd1e3d-16db-4ed9-b0f7-e4174ce22d2b.png)
+
+  <p> Informações armazenadas no LocalStorage após o usuário cadastrar o tutor.</p>
+  
+ ![image](https://user-images.githubusercontent.com/101907319/175368958-66502c11-634a-4a4f-bddb-2c29aa80a969.png)
+  
+  <p> No exemplo abaixo, o usuário tenta fazer o cadastro do tutor de maneira incorreta, sem preencher todos os campos, o que não finaliza o cadastro.</p>
+  
+  ![image](https://user-images.githubusercontent.com/101907319/175367758-cc3efcaa-42b5-4e2c-b300-39f19bbebb20.png)
+
+  ![image](https://user-images.githubusercontent.com/101907319/175367829-3ecabdbf-e559-4377-a7fa-5e4a5ef4b36e.png)
+
+  </li>
+  <hr>
+  
+  <li> CT-08: Verificar a página de Tutores.
+
+  Responsável: Pedro. 
+    
+  ![Captura de Tela 2022-06-20 às 18 40 10](https://user-images.githubusercontent.com/100447878/174680988-44d52b0f-3397-4744-86bc-7246bff79957.png)
+
+  <hr>
+  
+  <li> CT-09: Verificar a página de perfil de usuários cadastrados.
+  
+![Captura de Tela 2022-06-20 às 10 50 33](https://user-images.githubusercontent.com/100447878/174616506-d93f95de-3bd7-44f2-9323-d8bf0b3b4b2b.png)
+
+
+  </li>
+  
+  </ol>
+    
+
+## Avaliação
+
+Os testes de software mostraram que os requisitos priorizados foram atendidos, funcionando como planejado. Para as próximas iterações, serão acrescentadas melhorias no layout e responsividade da aplicação.
