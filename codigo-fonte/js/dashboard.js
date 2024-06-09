@@ -47,8 +47,6 @@ adicionarClientesAoLocalStorage('../data/users.json');
 // JSON de clientes
 const urlClientes = '../data/users.json';
 
-// Adicionar clientes ao localStorage
-adicionarClientesAoLocalStorage(urlClientes);
 
 // Carregar dados dos clientes do localStorage
 const clientes = carregarDadosGenericosDoLocalStorage('clientes');
@@ -323,6 +321,8 @@ if (pedidosLocalStorage) {
             }
             salesByMonth[month] += order.totalOrder;
         });
+
+        console.log('Total de vendas por mês:', salesByMonth);
 
         // Criação dos dados para o gráfico
         const labels = Object.keys(salesByMonth);

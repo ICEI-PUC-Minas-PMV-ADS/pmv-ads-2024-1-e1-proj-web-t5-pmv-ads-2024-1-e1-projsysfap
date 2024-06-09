@@ -31,7 +31,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
    <ol>
     <li>Acessar o navegador.</li>
     <li>Informar o endereço do site.</li>
-    <li>Adicionar produtos ao LocalStorage</li>
+    <li>Abrir o console do desenvolvedor (Ctrl + Shift + I no Chrome)</li>
     <li>Chamar a função "calcularQuantidadeProdutosLocalStorage."</li>
     <li>Chamar a função "atualizarElemento" com o ID do elemento HTML e o valor retornado pela função de cálculo.</li>
     <li>Verificar se o texto do elemento HTML foi atualizado corretamente.</li>
@@ -63,6 +63,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
    <ol>
     <li>Acessar o navegador.</li>
     <li>Informar o endereço do site.</li>
+    <li>Abrir o console do desenvolvedor (Ctrl + Shift + I no Chrome)</li>
     <li>Chamar a função "calcularQuantidadePedidosLocalStorage".</li>
     <li>Chamar a função atualizarElemento com o ID do elemento HTML e o valor retornado pela função de cálculo. </li>
     <li>Verificar se o texto do elemento HTML foi atualizado corretamente.</li>
@@ -94,7 +95,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
    <ol>
     <li>Acessar o navegador.</li>
     <li>Informar o endereço do site.</li>
-    <li>Adicionar pedidos ao LocalStorage com valores de venda.</li>
+    <li>Abrir o console do desenvolvedor (Ctrl + Shift + I no Chrome)</li>
     <li>Chamar a função calcularTotalVendas.</li>
     <li>Chama a função que atualiza os valores para R$</li>
     <li>Chamar a função atualizarElemento com o ID do elemento HTML e o valor formatado retornado pela função de cálculo.</li>
@@ -128,6 +129,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
    <ol>
     <li>Acessar o navegador.</li>
     <li>Informar o endereço do site.</li>
+    <li>Abrir o console do desenvolvedor (Ctrl + Shift + I no Chrome)</li>
     <li>Verificar console.log de pedidos recentes</li>
     <li>Verificar se os pedidos recentes são exibidos corretamente com as imagens correspondentes.</li>
     </ol>
@@ -147,162 +149,23 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   <th>Responsável</th>
  </tr>
  <tr>
-  <td>CT-05: Verificar o login de usuários</td>
+  <td>CT-05: Verificar se o gráfico exibe os valores corretos de vendas por mês.</td>
   <td>
    <ul>
-   <li>RF-002: O site deve permitir ao usuário fazer o login da sua conta.</li>
+   <li>RF-14: O site deve permitir ao vendedor e ao gerente visualizar um gráfico com o total de vendas por mês.</li>
    </ul>
   </td>
-  <td>Verificar se o login está sendo feito corretamente. </td>
+  <td>Verificar se o gráfico exibe os valores corretos de vendas por mês exibidos no LOG de vendas por mês. </td>
   <td>
    <ol>
     <li>Acessar o navegador.</li>
     <li>Informar o endereço do site.</li>
-    <li>Visualizar a página Home.</li>
-    <li>Clicar em “Entrar”, no menu.</li>
-    <li>Preencher seus dados e clicar em “Entrar”.</li>
+    <li>Abrir o console do desenvolvedor (Ctrl + Shift + I no Chrome)</li>
+    <li>Verificar o LOG de vendas por mês</li>
+    <li>Verificar se os valores do gráficos correspondem aos valores presentes no LOG</li>
    </ol>
    </td>
   <td>Após o login, o usuário deverá ser redirecionado para a sua página de perfil.</td>
-  <td>Maria</td>
- </tr>
-
- <table>
- <tr>
-  <th>Caso de teste</th>
-  <th>Requisitos associados</th>
-  <th>Objetivo do teste</th>
-  <th>Passos</th>
-  <th>Critérios de êxito</th>
-  <th>Responsável</th>
- </tr>
-  <tr>
-  <td>CT-06: Verificar o cadastro de livros</td>
-  <td>
-   <ul>
-   <li>RF-004	O site deve permitir ao usuário fazer o cadastro de livros.</li>
-   </ul>
-  </td>
-  <td>Verificar se o cadastro de livros está sendo feito corretamente. </td>
-  <td>
-   <ol>
-    <li>Acessar o navegador.</li>
-    <li>Informar o endereço do site.</li>
-    <li>Visualizar a página Home.</li>
-    <li>Clicar em “Entrar”, no menu.</li>
-    <li>Preencher seus dados e clicar em “Entrar”.</li>
-    <li>Visualizar a página Perfil.</li>
-    <li>Clicar em “Cadastro de livros”, no menu.</li>
-    <li>Visualizar a página Cadastro de Livros.</li>
-    <li>Inserir as informações sobre o livro.</li>
-    <li>Clicar em “Cadastrar”.</li>
-   </ol>
-   </td>
-  <td>Deve ocorrer uma validação das informações fornecidas pelo usuário, e ao clicar em "Cadastrar", deve aparecer a mensagem "Livro cadastrado com sucesso".</td>
-  <td>João</td>
- </tr>
-</table>
-
- <table>
- <tr>
-  <th>Caso de teste</th>
-  <th>Requisitos associados</th>
-  <th>Objetivo do teste</th>
-  <th>Passos</th>
-  <th>Critérios de êxito</th>
-  <th>Responsável</th>
- </tr>
-  <tr>
-  <td>CT-07: Verificar o cadastro de tutores</td>
-  <td>
-   <ul>
-   <li>RF-005	O site deve permitir ao usuário disponibilizar informações das disciplinas de tutoria e suas informações para contato.</li>
-   </ul>
-  </td>
-  <td>Verificar se o cadastro de tutores está sendo feito corretamente. </td>
-  <td>
-   <ol>
-    <li>Acessar o navegador.</li>
-    <li>Informar o endereço do site.</li>
-    <li>Visualizar a página Home.</li>
-    <li>Clicar em “Entrar”, no menu.</li>
-    <li>Preencher seus dados e clicar em “Entrar”.</li>
-    <li>Visualizar a página Perfil.</li>
-    <li>Clicar em “Cadastro de tutores”, no menu.</li>
-    <li>Visualizar a página Cadastro de Tutores.</li>
-    <li>Inserir as informações sobre o tutor.</li>
-    <li>Clicar em “Cadastrar”.</li>
-   </ol>
-   </td>
-  <td>Deve ocorrer uma validação das informações fornecidas pelo usuário, e ao clicar em "Cadastrar", deve aparecer a mensagem "Tutoria cadastrada com sucesso".</td>
-  <td>Beatriz</td>
- </tr>
-</table>
- 
- <table>
- <tr>
-  <th>Caso de teste</th>
-  <th>Requisitos associados</th>
-  <th>Objetivo do teste</th>
-  <th>Passos</th>
-  <th>Critérios de êxito</th>
-  <th>Responsável</th>
- </tr>
-  <tr>
-  <td>CT-08: Verificar a página de Tutores</td>
-  <td>
-   <ul>
-   <li>RF-008	O site deve permitir ao usuário visualizar os detalhes dos tutores.</li>
-   </ul>
-  </td>
-  <td>Verificar os detalhes dos Tutores e visualizar seus respectivos perfis. </td>
-  <td>
-   <ol>
-    <li>Acessar o navegador.</li>
-    <li>Informar o endereço do site.</li>
-    <li>Visualizar a página Home.</li>
-    <li>Clicar em “Tutores”, no menu.</li>
-    <li>Visualizar a página "Tutores".</li>
-    <li>Na página "Tutores", é possível visualizar os perfis com foto e informações dos tutores, além da barra de pesquisa acima dos perfis.</li>
-  
-   </ul>
-   </ol>
-   </td>
-  <td>Deve ser possível visualizar todos os perfis de Tutores, com suas respectivas fotos e informações, além da visualização da barra de pesquisa acima dos perfis.</td>
-  <td>Pedro</td>
- </tr>
-</table>
-
-<table>
- <tr>
-  <th>Caso de teste</th>
-  <th>Requisitos associados</th>
-  <th>Objetivo do teste</th>
-  <th>Passos</th>
-  <th>Critérios de êxito</th>
-  <th>Responsável</th>
- </tr>
-  <tr>
-  <td>CT-09: Verificar a página de perfil de usuários cadastrados</td>
-  <td>
-   <ul>
-   <li>RF-009	O site deve permitir ao usuário verificar as informações registradas no cadastro na página Perfil, após fazer seu login.</li>
-   </ul>
-  </td>
-  <td>Verificar se a página Perfil está apresentando as informações cadastradas pelo usuário corretamente. </td>
-  <td>
-   <ol>
-    <li>Acessar o navegador.</li>
-    <li>Informar o endereço do site.</li>
-    <li>Visualizar a página Home.</li>
-    <li>Clicar em "Cadastre-se", no Menu.</li>
-    <li>Preencher o formulário e clicar em “Cadastrar”.</li>
-    <li>Visualizar a página Login.</li>
-    <li>Preencher seus dados e clicar em “Entrar”.</li>
-    <li>Visualizar a página Perfil.</li>
-   </ol>
-   </td>
-  <td>As informações registradas pelo usuário no momento do cadastro devem estar disponibilizadas na página Perfil.</td>
-  <td>Silvia</td>
+  <td>Gabriel</td>
  </tr>
 </table>
