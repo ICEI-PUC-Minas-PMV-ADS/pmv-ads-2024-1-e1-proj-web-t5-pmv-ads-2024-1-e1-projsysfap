@@ -56,10 +56,6 @@ Responsável: Gabriel.
   
    <p>No teste em questão é checado através do console, o console.log responsável por informar a quantidade de vendas por mês, logo em seguida podemos visualizar no gráfico se os valores correspondem ao valor informado no LOG. </p>
   
-  ![8d33f1db-e0a7-4e41-b956-fde91ac31c63](https://user-images.githubusercontent.com/98122346/174851091-f201d92d-02f9-45c0-8b00-e66358158d8d.jpg)
-
-
-  <p>Se as informações de usuário forem válidas, o login será bem sucedido.</p>
   
   <img src="img/Caso de teste 05.png" alt="Caso de teste 05">
 
