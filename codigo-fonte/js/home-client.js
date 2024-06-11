@@ -87,7 +87,7 @@ function confirmOrder() {
             let orderData = JSON.parse(localStorage.getItem("orderData")?? "[]");
             orderData.push({
                 orderId: generateOrderToken(),
-                customerName: loggedUser.user,
+                customerName: loggedUser.fullName,
                 email: loggedUser.email,
                 orderDate: now,
                 products: orders,
@@ -108,6 +108,6 @@ window.onload = function(){
     const userName = document.getElementById("userName");
 
     if(loggedUser){
-        userName.innerHTML = loggedUser.user;
+        userName.innerHTML = loggedUser.fullName;
     }    
 }

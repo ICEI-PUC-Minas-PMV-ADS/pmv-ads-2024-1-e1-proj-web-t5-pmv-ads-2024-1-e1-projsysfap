@@ -119,17 +119,17 @@ document.getElementById("signupForm").addEventListener("submit", function(e) {
   }
   if (fullName.getAttribute("validValue") && email.getAttribute("validValue") && password.getAttribute("validValue") && phoneNumber.getAttribute("validValue")) {
       let signupData = JSON.parse(localStorage.getItem("signupData") ?? "[]");
-
-      signupData.push({
-          fullName: fullName.value,
-          email: email.value,
-          phoneNumber: phoneNumber.value,
-          accessProfile: accessProfile.value,
-          password: password.value,
-      });
+      const newUser = {
+        fullName: fullName.value,
+        email: email.value,
+        phoneNumber: phoneNumber.value,
+        accessProfile: accessProfile.value,
+        password: password.value,
+    }
+      signupData.push(newUser);
       localStorage.setItem("signupData", JSON.stringify(signupData));
       alert("Usuário cadastrado com sucesso!");
-  
+      localStorage.setItem("loggedUser",JSON.stringify(newUser));
     if(accessProfile.value === "cliente"){
       window.location.href = "../pages/home-client.html";
     } else {

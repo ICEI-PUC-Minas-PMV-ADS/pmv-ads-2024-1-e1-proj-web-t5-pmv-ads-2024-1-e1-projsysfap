@@ -1,14 +1,11 @@
-document.getElementById("signinForm").addEventListener("submit", function(e){
+document.getElementById("signinForm").addEventListener("submit", async function(e){
     e.preventDefault();
     const email = this.querySelector("#email");
     const password = this.querySelector("#current-password");
     const formInputs = this.querySelector(".formInputs");
     const errorMessage = this.querySelector(".invalid-feedback");
-
-    const userList = JSON.parse(localStorage.getItem("signupData"));
-    const registeredUser = userList?.find((user) => {
-        return user.email === email.value && user.password === password.value
-    });
+    
+    const registeredUser = await getRegisteredUser(email.value, password.value);
     if(registeredUser){
         if(errorMessage){
             formInputs.removeChild(errorMessage);
@@ -30,6 +27,20 @@ document.getElementById("signinForm").addEventListener("submit", function(e){
         }
     }
 });
+async function getRegisteredUser(emailValue, passwordValue){
+    const localStorageList = JSON.parse(localStorage.getItem("signupData")) || [];
+    const userFromLocalStorage = localStorageList.find((user) => {
+        return user.email === email.value && user.password === password.value
+    });
+    
+    if(userFromLocalStorage){
+        return userFromLocalStorage;
+    } else {
+        const response = await fetch("../data/users.json");
+        const {users} = await response.json();
+        return users.find((user)=> user.email === emailValue && user.password === passwordValue);
+    } 
+}
 document.getElementById("toggle-password").addEventListener("click", function(){
     const passwordInput = document.getElementById("current-password");
     const eyeIcon = this.querySelector("#eye-icon");
