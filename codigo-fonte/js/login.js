@@ -12,6 +12,7 @@ document.getElementById("signinForm").addEventListener("submit", async function(
         }
         localStorage.setItem("loggedUser",JSON.stringify(registeredUser));
         if(registeredUser.accessProfile === "cliente"){
+        if(registeredUser.accessProfile === "cliente"){
             window.location.href = "../pages/home-client.html";
         } else {
             window.location.href = "../pages/home.html";
@@ -21,6 +22,7 @@ document.getElementById("signinForm").addEventListener("submit", async function(
         password.classList.add("is-invalid");
         if(!errorMessage){
             const newElement = document.createElement("span");
+            newElement.textContent = "UsuÃ¡rio ou senha incorreto";
             newElement.textContent = "UsuÃ¡rio ou senha incorreto";
             newElement.classList.add("invalid-feedback","position-absolute","text-center","d-inline");
             formInputs.appendChild(newElement);
@@ -52,3 +54,4 @@ document.getElementById("toggle-password").addEventListener("click", function(){
       eyeIcon.data = "../assets/svg/fi_eye-off.svg"
     }
 });
+
