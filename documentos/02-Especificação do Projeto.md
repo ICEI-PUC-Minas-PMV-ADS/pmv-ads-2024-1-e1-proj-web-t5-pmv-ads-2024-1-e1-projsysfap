@@ -76,13 +76,20 @@
 | RF-01 |Listar as peças com filtros de classificação como ordem alfabética, por data de entrada, por quantidade de peças no estoque, entre outros                    | Alta   | 
 | RF-02 |Buscar peças com critérios como nome, código, status (disponível, não disponível), data de entrada | Alta |
 | RF-03 |Gerar relatórios das últimas movimentações, por período|Alta|
- | RF-04 |Realizar as tarefas de CRUD - criar novas peças, recuperar as peças, editar e deletar|Alta|
+| RF-04 |Realizar as tarefas de CRUD - criar novas peças, recuperar as peças, editar e deletar|Alta|
 | RF-05 |Permitir que o gerente adicione, remova e atualize usuários|Alta|
 | RF-06 |Permitir que o cliente solicite suporte ao vendedor para resolver problemas ou dúvidas|Média|
-| RF-07 |Fornecer ao usuário as informações dos produtos(preço, características, quantidade, descrição do produto)|Alta|
+| RF-07 |Permitir que o vendedor e o gerente visualize as informações dos produtos(preço, características, quantidade, descrição do produto)|Alta|
 | RF-08 |Ser capaz de realizar a contagem de mercadorias em estoque|Alta|
 | RF-09 |O sistema deve ter uma função para visualização do fluxo de mercadorias|Baixa|
-git
+| RF-10 |O sistema deve permitir ao usuario que possa realizar cadastro e fazer login no site|Alta|
+| RF-11 |O sistema deve permitir ao vendedor e ao gerente a visualização dos pedidos realizados|Média|
+| RF-12 |Permitir que o vendedor e o gerente visualize as informações sobre os pedidos(preço, quantidade, quantidade de total de pedidos)|Alta|
+| RF-13 |Permitir que o vendedor e o gerente visualizem o valor total das vendas|Média|
+| RF-14 | O site deve permitir ao vendedor e ao gerente visualizar um gráfico com o total de vendas por mês. | Baixa |
+
+
+
 
 **Prioridade: Alta / Média / Baixa. 
 
@@ -101,4 +108,3 @@ git
 | RNF-09 |Ser produzido em javascript, html e css|Alta|
 
 **Prioridade: Alta / Média / Baixa. 
-
