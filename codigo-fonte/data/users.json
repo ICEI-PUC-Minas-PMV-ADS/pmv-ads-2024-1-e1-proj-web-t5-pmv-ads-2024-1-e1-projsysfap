@@ -1,30 +1,143 @@
 {
-    "users": [
-      {
-        "fullName": "João Silva",
-        "phoneNumber": "33 98765-5982",
-        "email": "silva@gmail.com",
-        "accessProfile": "cliente"
-      },
-      {
-        "fullName": "Maria Souza",
-        "phoneNumber": "32 99654-3212",
-        "email": "maria@gmail.com",
-        "accessProfile": "cliente"
-      },
-      {
-        "fullName": "Lucas Santos",
-        "phoneNumber": "33 98465-4952",
-        "email": "joao@gmail.com",
-        "accessProfile": "cliente"
-      },
-      {
-        "fullName": "Heitor Oliveira",
-        "phoneNumber": "32 99854-3312",
-        "email": "heitor@gmail.com",
-        "accessProfile": "cliente"
-      }
-      
-    ]
-  }
-  
+  "users": [
+    {
+      "fullName": "Bruno Lima",
+      "phoneNumber": "33 91234-5678",
+      "email": "bruno.lima@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Carlos Almeida",
+      "phoneNumber": "32 92345-6789",
+      "email": "carlos.almeida@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Daniela Sousa",
+      "phoneNumber": "33 93456-7890",
+      "email": "daniela.sousa@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Eduardo Oliveira",
+      "phoneNumber": "32 94567-8901",
+      "email": "eduardo.oliveira@gmail.com",
+      "accessProfile": "cliente"
+    },
+    {
+      "fullName": "Fernanda Costa",
+      "phoneNumber": "11 95678-9012",
+      "email": "fernanda.costa@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Gabriel Pereira",
+      "phoneNumber": "21 96789-0123",
+      "email": "gabriel.pereira@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Helena Nogueira",
+      "phoneNumber": "31 97890-1234",
+      "email": "helena.nogueira@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Igor Lima",
+      "phoneNumber": "71 98901-2345",
+      "email": "igor.lima@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Joana Reis",
+      "phoneNumber": "41 99012-3456",
+      "email": "joana.reis@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Kevin Campos",
+      "phoneNumber": "51 90123-4567",
+      "email": "kevin.campos@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Lúcia Braga",
+      "phoneNumber": "61 91234-5678",
+      "email": "lucia.braga@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Mário Fernandes",
+      "phoneNumber": "81 92345-6789",
+      "email": "mario.fernandes@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Natália Dias",
+      "phoneNumber": "91 93456-7890",
+      "email": "natalia.dias@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Oscar Tavares",
+      "phoneNumber": "71 94567-8901",
+      "email": "oscar.tavares@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Paula Souza",
+      "phoneNumber": "31 95678-9012",
+      "email": "paula.souza@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Ana Silva",
+      "phoneNumber": "21 96789-0123",
+      "email": "ana.silva@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "João Silva",
+      "phoneNumber": "33 98765-5982",
+      "email": "silva@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Maria Souza",
+      "phoneNumber": "32 99654-3212",
+      "email": "maria@gmail.com",
+      "accessProfile": "cliente",
+      "password": "SecurePass456!"
+    },
+    {
+      "fullName": "Lucas Santos",
+      "phoneNumber": "33 98465-4952",
+      "email": "joao@gmail.com",
+      "accessProfile": "cliente",
+      "password": "StrongPass789!"
+    },
+    {
+      "fullName": "Heitor Oliveira",
+      "phoneNumber": "32 99854-3312",
+      "email": "heitor@gmail.com",
+      "accessProfile": "cliente",
+      "password": "Password@2024"
+    }
+  ]
+}

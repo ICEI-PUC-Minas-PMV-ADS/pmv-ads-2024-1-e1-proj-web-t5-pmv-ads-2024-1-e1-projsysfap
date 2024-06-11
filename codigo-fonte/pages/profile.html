@@ -1,14 +1,68 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+<script type='text/javascript'>
+
+getInfo();
+
+</script>
 <div>
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
         <a href="./home.html">
-          <img src="../assets/Home.svg" alt="Home" />
+          <img src="../assets/svg/Home.svg" alt="Home" />
         </a>
       </li>
-      <li class="breadcrumb-item active" aria-current="page">Settings</li>
+      <li class="breadcrumb-item active" aria-current="page">Perfil</li>
     </ol>
   </nav>
-  <h1>Settings</h1>
-  <p>Esta é a página sobre nós.</p>
+  <h1>Perfil</h1>
+  <p></p>
+<div class="row" >
+		<div class="col-12">
+			<!-- Page title -->
+			<div class="my-5">
+
+				<hr>
+			</div>
+			<!-- Form START -->
+				<div class="row mb-5">
+					<!-- Contact detail -->
+					<div class="col-xxl-8 mb-5 mb-xxl-0" style='background-color: #dbe2d9'>
+						<div class="bg-secondary-soft px-4 py-5 rounded">
+							<div class="row g-3">
+								<h4 class="mb-4 mt-0">Editar Perfil</h4>
+								<!-- First Name -->
+								<div class="col-md-6">
+									<label class="form-label">Nome *</label>
+									<input type="text" class="form-control" id='user' placeholder="" aria-label="Nome" value="" required>
+								</div>
+								<!-- Email -->
+								<div class="col-md-6">
+									<label for="inputEmail4" class="form-label">Email *</label>
+									<input type="email" class="form-control" id="email" aria-label="Email" value="" required>
+								</div>
+                                                                <!-- Last name -->
+								<div class="col-md-6">
+									<label class="form-label">Tipo de acesso *</label>
+									<input type="text" class="form-control" id='accessProfile' placeholder="" disabled aria-label="Tipo de Acesso" value="" required>
+								</div>
+								<!-- Phone number -->
+								<div class="col-md-6">
+									<label class="form-label">Senha *</label>
+									<input type="password" class="form-control" id='password' placeholder="" aria-label="Senha" value="" required>
+								</div>
+							        <p>
+                                                                   <button class='btn btn-primary btn-lg' onClick="atualizarPerfil();" value="Cadastrar">Atualizar</button>
+                                                                   <button class='btn btn-secondary btn-lg' onClick="getInfo()" value="Cadastrar">Cancelar</button>
+                                                                </p>
+							</div> <!-- Row END -->
+						</div>
+					</div>
+
+				
+                                </div> <!-- Row END -->
+				
+
+
+
 </div>

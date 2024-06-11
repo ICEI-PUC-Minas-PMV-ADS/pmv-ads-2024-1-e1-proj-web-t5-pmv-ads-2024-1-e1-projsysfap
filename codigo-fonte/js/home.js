@@ -1,10 +1,19 @@
-function loadPage(page) {
+function loadPage(page, sectionTitle) {
     fetch(page)
 .then(function (data) {
   return data.text();
 })
 .then(function (html) {
+  
+  if(sectionTitle== null){
+     sectionTitle="Section Title";
+  }
+
   document.getElementById('content').innerHTML = html;
+  document.getElementById('sectionTitle').innerHTML = sectionTitle;
+  if (page === './customers.html') {
+    setupCustomerPage();
+  }
   var scripts = document.getElementById("content").querySelectorAll("script");
   for (var i = 0; i < scripts.length; i++) {
     if (scripts[i].innerText) {
@@ -28,36 +37,59 @@ loadPage("dashboard.html");
 function logout(){
     localStorage.removeItem("loggedUser");
 }
+function activateNavButton(){
+  const btns = document.querySelectorAll(".nav .btn");
+  for (let btn of btns){
+      btn.addEventListener("click", function(){
+          for(let btn of btns){
+              btn.classList.remove("active");
+          }
+          this.classList.add("active");
+      })
+  }
+}
+window.onload = function(){
+  activateNavButton();
+  const loggedUser = JSON.parse(localStorage.getItem("loggedUser"));
+  const userName = document.getElementById("userName");
 
-function fetchOrders() {
-    fetch("../data/orderData.json")
-    .then(response => response.json())
-    .then(data => {
-        let newOrders = localStorage.getItem("orderData");
-        if(newOrders){
-            newOrders = JSON.parse(newOrders);
+  if(loggedUser){
+      userName.innerHTML = loggedUser.user;
+  }    
+}
 
-            data = [...newOrders,...data];
-        }
-        let table = document.querySelector("#ordersTable tbody");
-        for(let item of data){
-            let date = new Date(item.orderDate);
-            let options = {year: "numeric", month: "long", day: "numeric"};
-            let formattedDate = date.toLocaleDateString("pt-BR", options);
-            let row = document.createElement("tr");
-            let time =  date.toLocaleTimeString();
-            row.innerHTML = `<td>${item.orderId}</td><td class"align-middle">${item.customerName}</td><td>${formattedDate} - ${time}</td><td>${formatAsReal(item.totalOrder)}</td>`;
-            table.appendChild(row);
-        }
-        showTotalOrders(data.length);
-    }).catch(error => console.error("Error", error));
+function setupCustomerPage() {
+  document.getElementById("viewCustomers").addEventListener("click", function () {
+      const users = loadUsersFromLocalStorage();
+      displayCustomers(users);
+  });
+  // Adiciona outros event listeners e configurações específicas da página de clientes aqui
 }
-function showTotalOrders(length){
-    const cardText = document.getElementById("ordersPage_totalOrders");
-    cardText.innerHTML = length.toString();
+
+function loadUsersFromLocalStorage() {
+  return JSON.parse(localStorage.getItem("signupData")) || [];
 }
-function formatAsReal(value) {
-    let numberWithTwoDecimalPlaces = value.toFixed(2);
-    let valueInReals = Number(numberWithTwoDecimalPlaces).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    return valueInReals;
+
+function saveUsersToLocalStorage(users) {
+  localStorage.setItem("signupData", JSON.stringify(users));
 }
+
+function displayCustomers(data) {
+  const clienteTableBody = document.getElementById("clienteTableBody");
+  clienteTableBody.innerHTML = "";
+  data.forEach((cliente, index) => {
+      const row = `
+          <tr>
+              <td>${cliente.fullName}</td>
+              <td>${cliente.phoneNumber}</td>
+              <td>${cliente.email}</td>
+              <td>
+                  <button onclick="editCustomer(${index})">Editar</button>
+                  <button onclick="deleteCustomer(${index})">Excluir</button>
+              </td>
+          </tr>
+      `;
+      clienteTableBody.innerHTML += row;
+  });
+}
+

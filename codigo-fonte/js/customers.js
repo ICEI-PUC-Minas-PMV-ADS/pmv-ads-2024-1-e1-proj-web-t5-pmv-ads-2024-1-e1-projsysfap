@@ -1,46 +1,108 @@
-//document.addEventListener("DOMContentLoaded", function() {
-const element = document.getElementById('viewCustomers');
-element.addEventListener('onClick', function() {
-  
-    alert("Hello, world");
+document.addEventListener("DOMContentLoaded", function () {
+  function loadUsersFromLocalStorage() {
+      return JSON.parse(localStorage.getItem("signupData")) || [];
+  }
 
-    // Função para carregar os usuários do arquivo JSON
-    function loadUsersFromJSON(callback) {
-      fetch('../data/users.json') // Carrega o arquivo JSON
-        .then(response => response.json()) // Converte a resposta para JSON
-        .then(data => callback(null, data.users)) // Chama o callback com os usuários
-        .catch(error => callback(error, null)); // Em caso de erro, chama o callback com o erro
-    }
-    
-    // Função para exibir os clientes na tabela
-    function displayCustomers(data) {
-      // Seleciona o corpo da tabela
+  function saveUsersToLocalStorage(users) {
+      localStorage.setItem("signupData", JSON.stringify(users));
+  }
+
+  function displayCustomers(data) {
       const clienteTableBody = document.getElementById("clienteTableBody");
-  
-      // Limpa qualquer conteúdo existente na tabela
       clienteTableBody.innerHTML = "";
-  
-      // Adiciona os clientes na tabela
-      data.forEach(function(cliente) {
-        const row = `
-          <tr>
-            <td>${cliente.fullName}</td>
-            <td>${cliente.phoneNumber}</td>
-            <td>${cliente.email}</td>
-          </tr>
-        `;
-        clienteTableBody.innerHTML += row;
+      data.forEach((cliente, index) => {
+          const row = `
+              <tr>
+                  <td>${cliente.fullName}</td>
+                  <td>${cliente.phoneNumber}</td>
+                  <td>${cliente.email}</td>
+                  <td>
+                      <button onclick="editCustomer(${index})">Editar</button>
+                      <button onclick="deleteCustomer(${index})">Excluir</button>
+                  </td>
+              </tr>
+          `;
+          clienteTableBody.innerHTML += row;
       });
-    }
-  
-    // Chama a função para carregar os usuários e exibi-los na tabela
-    loadUsersFromJSON((error, users) => {
-      if (error) {
-        console.error('Erro ao carregar usuários:', error);
-        return;
-      }
-  
-      // Exibe os clientes na tabela
+  }
+
+  function addCustomer(customer) {
+      const users = loadUsersFromLocalStorage();
+      users.push(customer);
+      saveUsersToLocalStorage(users);
       displayCustomers(users);
-    });
+  }
+
+  function updateCustomer(index, customer) {
+      const users = loadUsersFromLocalStorage();
+      users[index] = customer;
+      saveUsersToLocalStorage(users);
+      displayCustomers(users);
+  }
+
+  function deleteCustomer(index) {
+      const users = loadUsersFromLocalStorage();
+      users.splice(index, 1);
+      saveUsersToLocalStorage(users);
+      displayCustomers(users);
+  }
+
+  function resetForm() {
+      document.getElementById("customerForm").reset();
+      document.getElementById("userId").value = "";
+      document.getElementById("formTitle").textContent = "Adicionar Cliente";
+  }
+
+  function editCustomer(index) {
+      const users = loadUsersFromLocalStorage();
+      const customer = users[index];
+      document.getElementById("userId").value = index;
+      document.getElementById("fullName").value = customer.fullName;
+      document.getElementById("phoneNumber").value = customer.phoneNumber;
+      document.getElementById("email").value = customer.email;
+      document.getElementById("password").value = customer.password;
+      document.getElementById("formTitle").textContent = "Editar Cliente";
+  }
+
+  function deleteCustomer(index) {
+      if (confirm("Tem certeza que deseja excluir este cliente?")) {
+          const users = loadUsersFromLocalStorage();
+          users.splice(index, 1);
+          saveUsersToLocalStorage(users);
+          displayCustomers(users);
+      }
+  }
+
+  document.getElementById("customerForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const index = document.getElementById("userId").value;
+      const customer = {
+          fullName: document.getElementById("fullName").value,
+          phoneNumber: document.getElementById("phoneNumber").value,
+          email: document.getElementById("email").value,
+          password: document.getElementById("password").value,
+      };
+      if (index === "") {
+          addCustomer(customer);
+      } else {
+          updateCustomer(index, customer);
+      }
+      resetForm();
   });
+
+  document.getElementById("resetForm").addEventListener("click", resetForm);
+
+  document.getElementById("viewCustomers").addEventListener("click", function () {
+      const users = loadUsersFromLocalStorage();
+      displayCustomers(users);
+  });
+
+  const initialUsers = [
+      { fullName: "JoÃ£o Silva", phoneNumber: "33 98765-5982", email: "silva@gmail.com", accessProfile: "cliente", password: "Password123!" },
+      { fullName: "Maria Souza", phoneNumber: "32 99654-3212", email: "maria@gmail.com", accessProfile: "cliente", password: "Pass1234!" }
+  ];
+  if (!localStorage.getItem("signupData")) {
+      saveUsersToLocalStorage(initialUsers);
+  }
+  displayCustomers(loadUsersFromLocalStorage());
+});
