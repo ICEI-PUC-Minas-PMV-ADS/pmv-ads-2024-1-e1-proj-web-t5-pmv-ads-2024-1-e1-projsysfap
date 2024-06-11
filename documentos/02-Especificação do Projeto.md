@@ -82,7 +82,7 @@
 | RF-07 |Fornecer ao usuário as informações dos produtos(preço, características, quantidade, descrição do produto)|Alta|
 | RF-08 |Ser capaz de realizar a contagem de mercadorias em estoque|Alta|
 | RF-09 |O sistema deve ter uma função para visualização do fluxo de mercadorias|Baixa|
-
+git
 
 **Prioridade: Alta / Média / Baixa. 
 

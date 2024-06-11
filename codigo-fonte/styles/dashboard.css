@@ -1,29 +1,29 @@
 body {
-    background-color: rgb(255, 255, 255);
-    margin: 0%;
-    width: 1144px;
-    height: 910px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 1144px;
-    height: 847px;
-    align-content: flex-start;
+.cstm-container {
+    border-radius: 8px;
+    padding-left: 3%;
+    padding-bottom: 5px;
     justify-content: flex-start;
-    background-color: azure;
-}
-
-
-.container {
     display: flex;
     flex-wrap: wrap;
+    min-width: 100vh;
     width: auto;
     height: auto;
-    margin: 0px;
     background-color: rgba(238, 240, 250, 1);
+}
+
+.row-1 {
+    height: 50vh;
+}
+
+.row-2 {
+    height: 50vh;
 }
 
 .row {
@@ -33,17 +33,21 @@ body {
     height: auto;
 }
 
-
 .card {
     display: flex;
     flex-wrap: wrap;
     border-radius: 12px;
     background-color: white;
     display: flex;
-    width: 321px;
-    height: 145px;
+    width: auto;
+    height: auto;
     margin-left: 19px;
     margin-top: 28px;
+}
+
+.card1 {
+    min-height: 145;
+    min-width: 321;
 }
 
 .icon1 {
@@ -79,8 +83,8 @@ body {
     border-radius: 12px;
     background-color: white;
     display: flex;
-    width: 321px;
-    height: 145px;
+    width: auto;
+    height: auto;
     margin-left: 19px;
     margin-top: 28px;
 }
@@ -92,31 +96,22 @@ body {
     margin-top: 32px;
 }
 
-.card-title4 {
-    color: #8B8D97;
-    font-size: 14px;
-    margin-top: 62px;
-    margin-bottom: 8px;
-}
 
 .card3 {
     display: flex;
     flex-wrap: wrap;
     border-radius: 12px;
     background-color: white;
-    width: 426px;
-    height: 145px;
-    margin-right: 19px;
-    margin-top: 28px;
-    margin-left: 19px;
+    width: auto;
+    height: auto;
+
 }
 
 .card-body3 {
     display: flex;
     flex-wrap: wrap;
     border-radius: 12px;
-    width: 396px;
-    height: 123px;
+
     align-items: flex-end;
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -130,7 +125,7 @@ body {
     color: #8B8D97;
     font-size: 14px;
     margin-bottom: 8px;
-    margin-top: 20px;
+    margin-top: 32px;
 }
 
 .card-title6 {
@@ -151,8 +146,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     border-radius: 12px;
-    width: 291;
-    height: 123px;
+    width: auto;
+    height: auto;
     align-items: flex-end;
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -171,8 +166,10 @@ body {
 .col-6 {
     display: flex;
     flex-wrap: wrap;
-    height: 134px;
-    width: 142px;
+    width: auto;
+    height: auto;
+    min-height: 134px;
+    min-width: 142px;
     flex-direction: column;
     justify-content: flex-end;
 }
@@ -185,7 +182,7 @@ body {
 }
 
 .card-text {
-    color: #45464E;
+    color: rgba(69, 70, 78, 1);
     margin-top: 0;
     margin-bottom: 0;
     font-size: 20px;
@@ -194,8 +191,6 @@ body {
 .col-7 {
     display: flex;
     flex-wrap: wrap;
-    height: 134px;
-    width: 123px;
     flex-direction: column;
     justify-content: flex-end;
 }
@@ -203,12 +198,13 @@ body {
 .card4 {
     display: flex;
     flex-wrap: wrap;
-    width: 665px;
-    height: 227px;
+    width: 605px;
+    height: auto;
     border-radius: 12px;
     background-color: #5570F1;
     margin-left: 19px;
     margin-top: 20px;
+    margin-bottom: 32px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 11px;
@@ -218,18 +214,22 @@ body {
 .icon4 {
     width: 36;
     height: 36;
+    background-color: #5570F1;
 }
 
 .card-body4 {
-    width: 635px;
-    height: 205px;
+    width: auto;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
 }
 
-.col-8 {
-    width: 300px;
-    height: 180px;
+.cstm-col8 {
+    width: auto;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -261,6 +261,8 @@ body {
     margin-top: 0px;
 }
 
+
+
 .card-text9 {
     display: flex;
     color: white;
@@ -268,31 +270,37 @@ body {
     margin-top: 0px;
 }
 
-.container1 {
+
+.cstm-lista {
     display: flex;
-    flex-wrap: nowrap;
-    width: 460px;
-    height: 675px;
-    margin: 0px;
-    background-color: rgba(238, 240, 250, 1);
-    align-items: flex-start;
     flex-direction: column;
 }
 
 .custom-card1 {
     background-color: white;
     border-radius: 12px;
-    width: 421px;
-    height: 623px;
-    margin-left: 18px;
-    margin-right: 21px;
+    width: 431px;
+    height: 632px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    border: 0px;
+    padding: 20px;
+    margin-left: 18px;
+}
+
+.titulo-pedidos {
+    color: rgba(69, 70, 78, 1);
+    font-size: 16px;
+    font-family: Inter;
 }
 
 .custom-card {
-    width: 381px;
-    height: 61px;
+    width: auto;
+    height: auto;
+    max-width: 381px;
+    max-height: 61px;
     background-color: white;
     margin-top: 12px;
 }
@@ -302,34 +310,34 @@ body {
     height: 61px;
     background-color: white;
     margin-top: 0px;
+    border: 0px;
 }
 
 
 .card-body5 {
+    padding: 0px;
     width: 381px;
     height: 49px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: flex-start;
-}
-
-.mt-3 {
-    margin-left: 38px;
-    margin-bottom: 0;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
 }
 
 .icons2 {
     width: 39px;
     height: 39px;
+    margin-right: 14px;
 
 }
 
 .nomeProduto {
     font-size: 14px;
-    color: rgb(69, 70, 78);
-    margin-bottom: 7px;
-    margin-left: 17px;
+    color: rgba(51, 52, 58, 1);
+    margin-bottom: 15px;
+    margin-top: 0px;
 }
 
 .precoQuantidade {
@@ -341,38 +349,7 @@ body {
 .dataPedido {
     font-size: 12px;
     color: rgb(166, 168, 177);
-    margin-left: 175px;
     margin-bottom: 7px;
-}
-
-.custom-btn {
-    font-size: 12px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: rgba(204, 95, 95, 1);
-    border-radius: 8px;
-    background-color: rgba(245, 126, 119, 0.12);
-    width: 77px;
-    height: 19px;
-    margin-left: 165px;
-    padding: 0px;
-    border: 0;
-}
-
-.custom-btn2 {
-    font-size: 12px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: rgba(81, 156, 102, 1);
-    border-radius: 8px;
-    background-color: rgba(50, 147, 111, 0.12);
-    width: 77px;
-    height: 19px;
-    margin-left: 165px;
-    padding: 0px;
-    border: 0;
 }
 
 .container2 {
@@ -387,9 +364,36 @@ body {
 .card5 {
     display: flex;
     flex-direction: row;
-    width: 665px;
-    height: 363px;
+    width: auto;
+    height: auto;
     background-color: white;
     border-radius: 12px;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 20px;
 
+}
+
+.iconscards {
+    border-radius: 8px;
+}
+
+.custombtn {
+    padding: 0px;
+    border: none;
+    border-radius: 8px;
+    background-color: none;
+    color: none;
+}
+
+.custombtn2 {
+    background-color: #5570F1;
+    padding: 0px;
+    border: none;
+    border-radius: 8px;
+}
+
+.tituloPedidos {
+    display: flex;
+    justify-content: flex-start;
 }

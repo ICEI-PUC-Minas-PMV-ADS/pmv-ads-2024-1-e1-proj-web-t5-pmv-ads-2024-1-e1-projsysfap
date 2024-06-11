@@ -6,3 +6,20 @@
   color: red;
   font-weight: bold;
 }
+.nav .btn.active {
+  color: #fff;
+  border: none;
+  background: #5570F1;
+}
+.nav .btn.active img {
+  filter: brightness(3);
+}
+.logout-btn, .support-btn {
+  width: max-content;
+}
+.logout-btn strong {
+  color:#CC5F5F;
+}
+.support-btn {
+  background: rgba(94, 99, 102, 0.1) !important;
+}
