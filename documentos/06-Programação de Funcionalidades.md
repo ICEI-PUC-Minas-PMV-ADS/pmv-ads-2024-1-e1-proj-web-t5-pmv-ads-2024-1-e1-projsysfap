@@ -2,7 +2,7 @@
 
 ### Dashboard
 
-<img src="img/DashboardSFAP.png" alt="protótipo-dashboard">
+<img src="img/DashboardSFAP.png" alt="dashboard">
 
 
 #### Requisito atendido
