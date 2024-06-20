@@ -1,4 +1,5 @@
 function loadPage(page, sectionTitle) {
+function loadPage(page, sectionTitle) {
     fetch(page)
 .then(function (data) {
   return data.text();
@@ -9,7 +10,16 @@ function loadPage(page, sectionTitle) {
      sectionTitle="Section Title";
   }
 
+  
+  if(sectionTitle== null){
+     sectionTitle="Section Title";
+  }
+
   document.getElementById('content').innerHTML = html;
+  document.getElementById('sectionTitle').innerHTML = sectionTitle;
+  if (page === './customers.html') {
+    setupCustomerPage();
+  }
   document.getElementById('sectionTitle').innerHTML = sectionTitle;
   if (page === './customers.html') {
     setupCustomerPage();
@@ -54,7 +64,7 @@ window.onload = function(){
   const userName = document.getElementById("userName");
 
   if(loggedUser){
-      userName.innerHTML = loggedUser.user;
+      userName.innerHTML = loggedUser.fullName;
   }    
 }
 
@@ -73,6 +83,27 @@ function loadUsersFromLocalStorage() {
 function saveUsersToLocalStorage(users) {
   localStorage.setItem("signupData", JSON.stringify(users));
 }
+
+function displayCustomers(data) {
+  const clienteTableBody = document.getElementById("clienteTableBody");
+  clienteTableBody.innerHTML = "";
+  data.forEach((cliente, index) => {
+      const row = `
+          <tr>
+              <td>${cliente.fullName}</td>
+              <td>${cliente.phoneNumber}</td>
+              <td>${cliente.email}</td>
+              <td>
+                  <button onclick="editCustomer(${index})">Editar</button>
+                  <button onclick="deleteCustomer(${index})">Excluir</button>
+              </td>
+          </tr>
+      `;
+      clienteTableBody.innerHTML += row;
+  });
+}
+
+
 
 function displayCustomers(data) {
   const clienteTableBody = document.getElementById("clienteTableBody");
