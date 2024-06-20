@@ -21,6 +21,7 @@ O código que foi usado para criar os elementos mencionados, pode ser acessado n
   <img src="/documentos/img/SYSFAP_cadastro.png">
   <figcaption>Figura 2 - Tela de Cadastro     
 </figure>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t5-pmv-ads-2024-1-e1-projsysfap/assets/166075614/22d10eb4-391c-422b-b73f-71cb373a3e4e)
 
 <h3><b>Tela pedidos</b></h3>
 <p>Exibe a tabela com informações dos pedidos realizados no sistema</p>

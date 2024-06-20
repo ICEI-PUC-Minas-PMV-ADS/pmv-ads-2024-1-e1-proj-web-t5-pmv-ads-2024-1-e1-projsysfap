@@ -2,13 +2,19 @@
 
 ### Dashboard
 
-<img src="img/DashboardSFAP.png" alt="protótipo-dashboard">
+<img src="img/DashboardSFAP.png" alt="Dashboard">
 
 
 #### Requisito atendido
 
 <li> RF-03: Gerar relatórios das últimas movimentações, por período;</li>
-<li>RF-09:	O sistema deve ter uma função para visualização do fluxo de mercadorias.</li>
+<li>RF-07: Fornecer ao usuário as informações dos produtos(preço, características, quantidade, descrição do produto);</li>
+<li>RF-08: Ser capaz de realizar a contagem de mercadorias em estoque.</li>
+<li>RF-09:	O sistema deve ter uma função para visualização do fluxo de mercadorias;</li>
+<li>RF-11: O sistema deve permitir ao vendedor e ao gerente a visualização dos pedidos realizados;</li>
+ <li>RF-12: Permitir que o vendedor e o gerente visualize as informações sobre os pedidos(preço, quantidade, quantidade de total de pedidos);</li>
+ <li>RF-13:	Permitir que o vendedor e o gerente visualizem o valor total das vendas;</li>
+ <li>RF-14: O site deve permitir ao vendedor e ao gerente visualizar um gráfico com o total de vendas por mês.</li>
 
 
 #### Artefatos da funcionalidade
@@ -190,3 +196,32 @@ Ao acessar a home do vendedor e do gerente, o usuario deverá apertar no menu la
 Pedro Henrique Pires de Souza Neves 
 
 
+### Home do cliente
+
+<img src="img/cadastroSFAP.png" alt="tela-cadastro">
+
+#### Requisito atendido
+
+<li>RF-10	O sistema deve permitir ao usuario que possa realizar cadastro e fazer login no site</li>
+
+
+#### Artefatos da funcionalidade
+
+<li>signup.html</li>
+<li>signup.css</li>
+<li>signup.js</li>
+
+
+#### Estrutura de Dados
+
+<li>signup.html</li>
+
+
+#### Instruções de acesso
+
+Caso o usuário não tenha um cadastro ativo no sistema, ele deverá clicar em "Signup" na tela de login, assim ele será redirecionado a uma pagina em que ele poderá realizar o seu cadastro no site
+
+
+#### Responsável
+
+Erycson Jose da Silva
