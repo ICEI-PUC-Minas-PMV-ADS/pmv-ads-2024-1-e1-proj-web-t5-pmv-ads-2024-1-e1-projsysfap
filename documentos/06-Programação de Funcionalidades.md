@@ -1,6 +1,6 @@
 # Programação de Funcionalidades
 
-### Dashboard
+### Painel de Controle
 
 <img src="img/DashboardSFAP.png" alt="Dashboard">
 
