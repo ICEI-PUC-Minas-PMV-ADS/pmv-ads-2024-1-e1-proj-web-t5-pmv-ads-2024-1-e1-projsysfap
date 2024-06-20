@@ -198,7 +198,7 @@ Pedro Henrique Pires de Souza Neves
 
 ### Home do cliente
 
-<img src="img/cadastroSFAP.png" alt="tela-cadastro">
+<img src="/documentos/img/Pagina Home Client.png" alt="Home-cliente">
 
 #### Requisito atendido
 

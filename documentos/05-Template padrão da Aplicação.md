@@ -61,6 +61,6 @@ O código que foi usado para criar os elementos mencionados, pode ser acessado n
 <p>Essa página permite ao usuário com perfil "cliente" interagir com o sistema</p>
 <figure> 
   <img src="/documentos/img/Pagina Home Client.png">
-  <figcaption>Figura 7 - Página de estoque
+  <figcaption>Figura 7 - Página Home do Cliente
 </figure>
 

@@ -169,3 +169,113 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   <td>Gabriel</td>
  </tr>
 </table>
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-06: Verificar login do usuário.</td>
+  <td>
+   <ul>
+   <li>RF-10: O sistema deve permitir ao usuario que possa realizar cadastro e fazer login no site.</li>
+   </ul>
+  </td>
+  <td>Verificar se o login está funcionando corretamente. </td>
+  <td>
+   <ol>
+    <li>Acessar a página de login.</li>
+    <li>Preencher os campos corretamente e clicar em "Entrar".</li>
+   </ol>
+   </td>
+  <td>Após o login, o usuário será direcionado a página inicial do dashboard de acordo com o seu perfil de acesso.</td>
+  <td>Erycson José</td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-07: Verificar cadastro de usuário.</td>
+  <td>
+   <ul>
+   <li>RF-10: O sistema deve permitir ao usuario que possa realizar cadastro e fazer login no site.</li>
+   </ul>
+  </td>
+  <td>Verificar se o cadastro do usuário está sendo feito corretamente.</td>
+  <td>
+   <ol>
+    <li>Acessar a página de cadastro.</li>
+    <li>Preencher os campos corretamente e clicar em "Cadastra".</li>
+   </ol>
+   </td>
+  <td>Após o cadastro realizado com sucesso, o usuário será direcionado a página inicial do dashboard de acordo com o seu perfil de acesso</td>
+  <td>Erycson José</td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-08: Verificar a página de pedidos.</td>
+  <td>
+   <ul>
+   <li>RF-11: O sistema deve permitir ao vendedor e ao gerente a visualização dos pedidos realizados.</li>
+   </ul>
+  </td>
+  <td>Verificar se a tabela de pedidos está atualizada e preenchida corretamente.</td>
+  <td>
+   <ol>
+    <li>Realizar login.</li>
+    <li>Acessar a página de pedidos.</li>
+   </ol>
+   </td>
+  <td>Deve ser possível visualizar todos os pedidos realizados, com suas respectivas informações.</td>
+  <td>Erycson José</td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-09: Verificar a página do cliente.</td>
+  <td>
+   <ul>
+   <li>RF-15: Permitir que o cliente realize pedidos.</li>
+   </ul>
+  </td>
+  <td>Verificar se usuário com o perfil de acesso "cliente" consegue realizar pedidos.</td>
+  <td>
+   <ol>
+    <li>Realizar login.</li>
+    <li>Acessar a página de dashboard do cliente.</li>
+   </ol>
+   </td>
+  <td>Deve ser possível visualizar todos os produtos cadastrados no sistema, selecionar o produto dejesável e a quantidade, adicionar os produtos no carrinho e realizar o pedido. Ao concluir o pedido a tabela de pedidos é atualizada.</td>
+  <td>Erycson José</td>
+ </tr>
+</table>
