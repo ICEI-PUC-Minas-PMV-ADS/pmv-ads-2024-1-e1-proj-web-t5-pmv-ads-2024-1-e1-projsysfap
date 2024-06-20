@@ -113,9 +113,3 @@ Responsável: Gabriel.
 ## Avaliação
 
 Os testes de software mostraram que os requisitos priorizados foram atendidos, funcionando como planejado. Para as próximas iterações, serão acrescentadas melhorias no layout e responsividade da aplicação. 
-  </ol>
-    
-
-## Avaliação
-
-Os testes de software mostraram que os requisitos priorizados foram atendidos, funcionando como planejado. Para as próximas iterações, serão acrescentadas melhorias no layout e responsividade da aplicação.

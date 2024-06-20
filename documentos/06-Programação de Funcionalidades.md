@@ -202,24 +202,24 @@ Pedro Henrique Pires de Souza Neves
 
 #### Requisito atendido
 
-<li>RF-10	O sistema deve permitir ao usuario que possa realizar cadastro e fazer login no site</li>
+<li>RF-15: Permitir que o cliente realize pedidos.</li>
 
 
 #### Artefatos da funcionalidade
 
-<li>signup.html</li>
-<li>signup.css</li>
-<li>signup.js</li>
+<li>home-client.html</li>
+<li>home-client.css</li>
+<li>home-client.js</li>
 
 
 #### Estrutura de Dados
 
-<li>signup.html</li>
+<li>home-client.html</li>
 
 
 #### Instruções de acesso
 
-Caso o usuário não tenha um cadastro ativo no sistema, ele deverá clicar em "Signup" na tela de login, assim ele será redirecionado a uma pagina em que ele poderá realizar o seu cadastro no site
+Ao fazer o login no sistema com um perfil de usuário "cliente" você tem acesso a página.
 
 
 #### Responsável

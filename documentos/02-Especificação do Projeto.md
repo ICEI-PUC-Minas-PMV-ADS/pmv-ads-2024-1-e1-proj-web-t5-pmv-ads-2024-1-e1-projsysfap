@@ -86,8 +86,8 @@
 | RF-11 |O sistema deve permitir ao vendedor e ao gerente a visualização dos pedidos realizados|Média|
 | RF-12 |Permitir que o vendedor e o gerente visualize as informações sobre os pedidos(preço, quantidade, quantidade de total de pedidos)|Alta|
 | RF-13 |Permitir que o vendedor e o gerente visualizem o valor total das vendas|Média|
-| RF-14 | O site deve permitir ao vendedor e ao gerente visualizar um gráfico com o total de vendas por mês. | Baixa |
-
+| RF-14 | O site deve permitir ao vendedor e ao gerente visualizar um gráfico com o total de vendas por mês | Baixa |
+| RF-15 | Permitir que o cliente realize pedidos | Alta |
 
 
 
