@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
 }
 
 .clientes .clientes-item a img {
@@ -13,27 +15,35 @@ body {
 h1 {
     color: #343a40;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 p {
     color: #6c757d;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .table {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.table th,
-.table td {
+.table th, .table td {
     border: none;
+    padding: 12px 15px;
+    text-align: left;
 }
 
 .table th {
     background-color: #343a40;
     color: #fff;
+    font-weight: bold;
 }
 
 .table tbody tr:nth-child(even) {
@@ -44,10 +54,80 @@ p {
     background-color: #e9ecef;
 }
 
+.table tbody td button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.table tbody td button:hover {
+    background-color: #0056b3;
+}
+
+#customerForm {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#customerForm div {
+    margin-bottom: 15px;
+}
+
+#customerForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#customerForm input[type="text"], #customerForm input[type="email"], #customerForm input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+#customerForm button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#customerForm button:hover {
+    background-color: #218838;
+}
+
+#customerForm button[type="reset"] {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+
+#customerForm button[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+#formTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
 .logout-btn strong {
     color: #CC5F5F;
 }
 
 .support-btn {
-    background: rgba(94, 99, 102, 0.1) !important;
+    background: rgba(94, 99, 102, 0.1);
 }
