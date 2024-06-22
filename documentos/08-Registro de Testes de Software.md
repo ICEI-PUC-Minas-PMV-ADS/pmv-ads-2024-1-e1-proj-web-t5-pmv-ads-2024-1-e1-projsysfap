@@ -58,7 +58,7 @@ Responsável: Gabriel.
   
   
   <img src="img/Caso de teste 05.png" alt="Caso de teste 05">
-
+<hr>
 
   </li>  
   <hr/>
@@ -112,4 +112,4 @@ Responsável: Gabriel.
 
 ## Avaliação
 
-Os testes de software mostraram que os requisitos priorizados foram atendidos, funcionando como planejado. Para as próximas iterações, serão acrescentadas melhorias no layout e responsividade da aplicação.
+Os testes de software mostraram que os requisitos priorizados foram atendidos, funcionando como planejado. Para as próximas iterações, serão acrescentadas melhorias no layout e responsividade da aplicação. 

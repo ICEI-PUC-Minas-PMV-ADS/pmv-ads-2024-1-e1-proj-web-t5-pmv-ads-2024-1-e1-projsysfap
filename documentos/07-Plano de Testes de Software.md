@@ -169,7 +169,6 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   <td>Gabriel</td>
  </tr>
 </table>
-
 <table>
  <tr>
   <th>Caso de teste</th>

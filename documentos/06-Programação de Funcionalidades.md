@@ -1,14 +1,20 @@
 # Programação de Funcionalidades
 
-### Dashboard
+### Painel de Controle
 
-<img src="img/DashboardSFAP.png" alt="protótipo-dashboard">
+<img src="img/DashboardSFAP.png" alt="Dashboard">
 
 
 #### Requisito atendido
 
 <li> RF-03: Gerar relatórios das últimas movimentações, por período;</li>
-<li>RF-09:	O sistema deve ter uma função para visualização do fluxo de mercadorias.</li>
+<li>RF-07: Fornecer ao usuário as informações dos produtos(preço, características, quantidade, descrição do produto);</li>
+<li>RF-08: Ser capaz de realizar a contagem de mercadorias em estoque.</li>
+<li>RF-09:	O sistema deve ter uma função para visualização do fluxo de mercadorias;</li>
+<li>RF-11: O sistema deve permitir ao vendedor e ao gerente a visualização dos pedidos realizados;</li>
+ <li>RF-12: Permitir que o vendedor e o gerente visualize as informações sobre os pedidos(preço, quantidade, quantidade de total de pedidos);</li>
+ <li>RF-13:	Permitir que o vendedor e o gerente visualizem o valor total das vendas;</li>
+ <li>RF-14: O site deve permitir ao vendedor e ao gerente visualizar um gráfico com o total de vendas por mês.</li>
 
 
 #### Artefatos da funcionalidade
@@ -190,3 +196,32 @@ Ao acessar a home do vendedor e do gerente, o usuario deverá apertar no menu la
 Pedro Henrique Pires de Souza Neves 
 
 
+### Home do cliente
+
+<img src="/documentos/img/Pagina Home Client.png" alt="Home-cliente">
+
+#### Requisito atendido
+
+<li>RF-15: Permitir que o cliente realize pedidos.</li>
+
+
+#### Artefatos da funcionalidade
+
+<li>home-client.html</li>
+<li>home-client.css</li>
+<li>home-client.js</li>
+
+
+#### Estrutura de Dados
+
+<li>home-client.html</li>
+
+
+#### Instruções de acesso
+
+Ao fazer o login no sistema com um perfil de usuário "cliente" você tem acesso a página.
+
+
+#### Responsável
+
+Erycson Jose da Silva
