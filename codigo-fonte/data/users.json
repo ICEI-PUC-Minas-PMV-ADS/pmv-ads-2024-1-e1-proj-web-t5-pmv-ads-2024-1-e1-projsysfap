@@ -138,6 +138,20 @@
       "email": "heitor@gmail.com",
       "accessProfile": "cliente",
       "password": "Password@2024"
+    },
+    {
+      "fullName": "Carlos Matheus",
+      "phoneNumber": "32 92345-6788",
+      "email": "carlos.matheus@gmail.com",
+      "accessProfile": "gerente",
+      "password": "Password123!"
+    },
+    {
+      "fullName": "Carlos José",
+      "phoneNumber": "32 92345-6745",
+      "email": "carlos.jose@gmail.com",
+      "accessProfile": "vendedor",
+      "password": "Password123!"
     }
   ]
 }

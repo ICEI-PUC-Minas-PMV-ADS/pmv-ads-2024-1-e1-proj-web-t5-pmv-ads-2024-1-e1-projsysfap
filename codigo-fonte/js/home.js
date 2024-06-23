@@ -54,7 +54,7 @@ window.onload = function(){
   const userName = document.getElementById("userName");
 
   if(loggedUser){
-      userName.innerHTML = loggedUser.user;
+      userName.innerHTML = loggedUser.fullName;
   }    
 }
 

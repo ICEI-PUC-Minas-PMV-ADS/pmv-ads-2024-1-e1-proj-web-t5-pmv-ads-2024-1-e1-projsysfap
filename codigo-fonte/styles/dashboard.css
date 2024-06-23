@@ -38,7 +38,6 @@ body {
     flex-wrap: wrap;
     border-radius: 12px;
     background-color: white;
-    display: flex;
     width: auto;
     height: auto;
     margin-left: 19px;
@@ -46,8 +45,8 @@ body {
 }
 
 .card1 {
-    min-height: 145;
-    min-width: 321;
+    min-height: 145px;
+    min-width: 321px;
 }
 
 .icon1 {

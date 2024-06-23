@@ -2,7 +2,7 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./home.html">
-            <img src="../assets/Home.svg" alt="Home">
+            <img src="../assets/svg/Home.svg" alt="Home">
           </a></li>
           <li class="breadcrumb-item active" aria-current="page">Cadastrar Produtos</li>
         </ol>
@@ -17,7 +17,7 @@
        <input type="file" id="file-selector" onChange="readFile(this)" accept="json" value='Importar Produtos'>
     </p>
     <p id='abrirprodutos'>
-       <a href='' onClick="loadPage('./myStock.html')" id='verProdutos' class='invisible'>Ir para a pagina de produtos</a>
+       <button data-bs-toggle="button" onClick="loadPage('./myStock.html')" id='verProdutos' class='invisible'>Ir para a pagina de produtos</button>
        <br/>
        <a href="download.php" onClick="showInput()" id='baixarTemplate'>Baixar o template de Produtos</a>
     </p>
