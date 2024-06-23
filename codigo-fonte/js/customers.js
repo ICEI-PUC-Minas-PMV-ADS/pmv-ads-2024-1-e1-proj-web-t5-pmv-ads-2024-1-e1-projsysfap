@@ -8,9 +8,11 @@ function editCustomer(index) {
     document.getElementById("password").value = customer.password;
     document.getElementById("formTitle").textContent = "Editar Cliente";
 }
+
 function loadUsersFromLocalStorage() {
-    return JSON.parse(localStorage.getItem("signupData")) || [];
+    return JSON.parse(localStorage.getItem("clientes")) || [];
 }
+
 function deleteCustomer(index) {
     if (confirm("Tem certeza que deseja excluir este cliente?")) {
         const users = loadUsersFromLocalStorage();
@@ -19,9 +21,11 @@ function deleteCustomer(index) {
         displayCustomers(users);
     }
 }
+
 function saveUsersToLocalStorage(users) {
-    localStorage.setItem("signupData", JSON.stringify(users));
+    localStorage.setItem("clientes", JSON.stringify(users));
 }
+
 function displayCustomers(data) {
     const clienteTableBody = document.getElementById("clienteTableBody");
     clienteTableBody.innerHTML = "";
@@ -40,6 +44,7 @@ function displayCustomers(data) {
         clienteTableBody.innerHTML += row;
     });
 }
+
 document.addEventListener("DOMContentLoaded", function (data) {
 
     function addCustomer(customer) {
@@ -61,8 +66,6 @@ document.addEventListener("DOMContentLoaded", function (data) {
         document.getElementById("userId").value = "";
         document.getElementById("formTitle").textContent = "Adicionar Cliente";
     }
-
-
 
     document.getElementById("customerForm").addEventListener("submit", function (event) {
         event.preventDefault();
@@ -92,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function (data) {
         { fullName: "João Silva", phoneNumber: "33 98765-5982", email: "silva@gmail.com", accessProfile: "cliente", password: "Password123!" },
         { fullName: "Maria Souza", phoneNumber: "32 99654-3212", email: "maria@gmail.com", accessProfile: "cliente", password: "Pass1234!" }
     ];
-    if (!localStorage.getItem("signupData")) {
+    if (!localStorage.getItem("clientes")) {
         saveUsersToLocalStorage(initialUsers);
     }
     displayCustomers(loadUsersFromLocalStorage());
