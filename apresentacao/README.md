@@ -6,7 +6,7 @@
 
 ## Vídeo de apresentação
 
-[Adicione vídeo de apresentação.]
+[Link do vídeo de apresentação.](https://www.loom.com/share/59432eb26ea5438e834204bb2fb0bfd2?sid=9ba94ea3-a30c-4efc-a56c-afa932172941)
 
 ## Hospedagem
 
