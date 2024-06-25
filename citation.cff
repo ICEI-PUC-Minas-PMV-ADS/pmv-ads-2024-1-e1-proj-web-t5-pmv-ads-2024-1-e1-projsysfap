@@ -1,0 +1,22 @@
+message: Please cite this software using these metadata.
+title:
+authors:
+  - family-names: Henrique de Oliveira
+    given-names: Ernane
+  - family-names: Jose da Silva
+    given-names: Erycson
+  - family-names: Barboza da Gama Reis Silva
+    given-names: Gabriel
+  - family-names: Flavio Silva Oliveira
+    given-names: Heitor
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Rodrigo Costa
+    given-names: Marco
+keywords:
+  - Gestão
+  - Autopeças
+  - Estoque
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t5-pmv-ads-2024-1-e1-projsysfap
+version: 1.0.0
+date-released: 2024-06-24
